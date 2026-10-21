@@ -32,3 +32,5 @@ web/data/submissions*.jsonl
 # drafts kept out of the public repo
 docs/LAUNCH.md
 docs/STATUS.md
+.vercel
+.env*
