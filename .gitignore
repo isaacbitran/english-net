@@ -1,0 +1,34 @@
+# secrets
+.env
+.env.*
+!.env.example
+# python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+# caches and downloaded data (rebuildable)
+cache/
+data/raw/
+data/*.jsonl
+hf_cache/
+# node / next (any directory)
+node_modules/
+.next/
+.vercel/
+*.tsbuildinfo
+# Jev spend ledger and answer cache
+*.sqlite
+ledger*.jsonl
+# web
+web/node_modules/
+web/.next/
+web/.env*
+!web/.env.example
+web/next-env.d.ts
+.DS_Store
+web/data/submissions*.jsonl
+!data/adversarial.jsonl
+# drafts kept out of the public repo
+docs/LAUNCH.md
+docs/STATUS.md

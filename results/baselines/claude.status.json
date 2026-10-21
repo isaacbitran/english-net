@@ -1,0 +1,14 @@
+{
+ "model": "claude",
+ "status": "deferred",
+ "reason": "Anthropic API refused the probe call with a billing/credit error",
+ "date": "2026-10-19",
+ "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CgCNkE6LKzmAh6uEXApDT'}",
+ "cost_estimate": {
+  "calls": 3121,
+  "input_tokens_est": 621145,
+  "output_tokens_max": 15605,
+  "usd_est": 2.8
+ },
+ "how_to_run": "python -m englishnet.baselines score --models claude"
+}

@@ -1,0 +1,800 @@
+{
+ "generated": "2026-10-19 18:21",
+ "models": {
+  "piguard": {
+   "note": "Its published training set (datasets/train.json, 20 public datasets) contains all 546 deepset-train546 rows and 7-20% of our safeguard, jackhhao and itw test rows verbatim (exact-match table below); its validation set used NotInject samples.",
+   "meta": {
+    "model": "piguard",
+    "repo": "leolee99/PIGuard",
+    "revision": "dd78b24e330193a22d2293ac66922dd4f982f563",
+    "device": "mps",
+    "batch_size": 16,
+    "max_tokens": 512,
+    "attack_label": "injection",
+    "latency_ms_median": 21.9,
+    "latency_n": 100,
+    "latency_note": "batch size 1, mps, Apple Silicon (10 cores, 16 GB)",
+    "rows_scored_this_run": 195,
+    "wall_s_this_run": 1.2,
+    "torch": "2.14.1",
+    "rows_scored_total": 7440,
+    "wall_s_total": 429.2
+   },
+   "thresholds": {
+    "native_0.5": 0.5,
+    "dev_tuned": 0.13
+   },
+   "missing_test_scores": 0,
+   "test": {
+    "native_0.5": {
+     "safeguard": {
+      "n": 598,
+      "acc": 84.1,
+      "f1": 70.8,
+      "auc": 0.903,
+      "catch@1%fpr": 45.2,
+      "catch@5%fpr": 60.6,
+      "fpr": 5.4,
+      "tpr": 61.2
+     },
+     "jackhhao": {
+      "n": 262,
+      "acc": 95.4,
+      "f1": 95.7,
+      "auc": 0.995,
+      "catch@1%fpr": 94.2,
+      "catch@5%fpr": 98.6,
+      "fpr": 4.9,
+      "tpr": 95.7
+     },
+     "itw": {
+      "n": 478,
+      "acc": 84.9,
+      "f1": 84.5,
+      "auc": 0.93,
+      "catch@1%fpr": 28.4,
+      "catch@5%fpr": 77.1,
+      "fpr": 19.6,
+      "tpr": 90.4
+     },
+     "openpi": {
+      "n": 499,
+      "acc": 83.2,
+      "f1": 81.7,
+      "auc": 0.93,
+      "catch@1%fpr": 14.8,
+      "catch@5%fpr": 63.6,
+      "fpr": 8.8,
+      "tpr": 75.2
+     },
+     "deepset": {
+      "n": 116,
+      "acc": 82.8,
+      "f1": 80.0,
+      "auc": 0.96,
+      "catch@1%fpr": 81.7,
+      "catch@5%fpr": 91.7,
+      "fpr": 0.0,
+      "tpr": 66.7
+     },
+     "deepset-train546": {
+      "n": 546,
+      "acc": 96.7,
+      "f1": 95.4,
+      "auc": 0.996,
+      "catch@1%fpr": 96.1,
+      "catch@5%fpr": 99.0,
+      "fpr": 0.0,
+      "tpr": 91.1
+     },
+     "notinject": {
+      "n": 339,
+      "acc": 88.5,
+      "fpr": 11.5
+     },
+     "gandalf": {
+      "n": 223,
+      "acc": 93.7,
+      "tpr": 93.7
+     },
+     "adversarial": {
+      "n": 60,
+      "acc": 71.7,
+      "f1": 74.6,
+      "auc": 0.874,
+      "catch@1%fpr": 25.0,
+      "catch@5%fpr": 60.0,
+      "fpr": 10.0,
+      "tpr": 62.5
+     }
+    },
+    "dev_tuned": {
+     "safeguard": {
+      "n": 598,
+      "acc": 84.8,
+      "f1": 74.4,
+      "auc": 0.903,
+      "catch@1%fpr": 45.2,
+      "catch@5%fpr": 60.6,
+      "fpr": 8.5,
+      "tpr": 70.2
+     },
+     "jackhhao": {
+      "n": 262,
+      "acc": 96.6,
+      "f1": 96.8,
+      "auc": 0.995,
+      "catch@1%fpr": 94.2,
+      "catch@5%fpr": 98.6,
+      "fpr": 6.5,
+      "tpr": 99.3
+     },
+     "itw": {
+      "n": 478,
+      "acc": 79.5,
+      "f1": 80.9,
+      "auc": 0.93,
+      "catch@1%fpr": 28.4,
+      "catch@5%fpr": 77.1,
+      "fpr": 33.8,
+      "tpr": 95.4
+     },
+     "openpi": {
+      "n": 499,
+      "acc": 83.6,
+      "f1": 83.4,
+      "auc": 0.93,
+      "catch@1%fpr": 14.8,
+      "catch@5%fpr": 63.6,
+      "fpr": 15.3,
+      "tpr": 82.4
+     },
+     "deepset": {
+      "n": 116,
+      "acc": 87.1,
+      "f1": 85.7,
+      "auc": 0.96,
+      "catch@1%fpr": 81.7,
+      "catch@5%fpr": 91.7,
+      "fpr": 0.0,
+      "tpr": 75.0
+     },
+     "deepset-train546": {
+      "n": 546,
+      "acc": 97.8,
+      "f1": 97.0,
+      "auc": 0.996,
+      "catch@1%fpr": 96.1,
+      "catch@5%fpr": 99.0,
+      "fpr": 0.9,
+      "tpr": 95.6
+     },
+     "notinject": {
+      "n": 339,
+      "acc": 84.7,
+      "fpr": 15.3
+     },
+     "gandalf": {
+      "n": 223,
+      "acc": 96.9,
+      "tpr": 96.9
+     },
+     "adversarial": {
+      "n": 60,
+      "acc": 78.3,
+      "f1": 82.2,
+      "auc": 0.874,
+      "catch@1%fpr": 25.0,
+      "catch@5%fpr": 60.0,
+      "fpr": 15.0,
+      "tpr": 75.0
+     }
+    }
+   }
+  },
+  "protectai": {
+   "note": "Model card lists jackhhao/jailbreak-classification among its training sets, so jackhhao numbers are likely in-distribution. Card says it does not target jailbreaks.",
+   "meta": {
+    "model": "protectai",
+    "repo": "protectai/deberta-v3-base-prompt-injection-v2",
+    "revision": "90c9989b1a342275dd0d1a95aad283c04e075671",
+    "device": "mps",
+    "batch_size": 16,
+    "max_tokens": 512,
+    "attack_label": "INJECTION",
+    "latency_ms_median": 27.2,
+    "latency_n": 100,
+    "latency_note": "batch size 1, mps, Apple Silicon (10 cores, 16 GB)",
+    "rows_scored_this_run": 195,
+    "wall_s_this_run": 1.6,
+    "torch": "2.14.1",
+    "rows_scored_total": 7440,
+    "wall_s_total": 479.6
+   },
+   "thresholds": {
+    "native_0.5": 0.5,
+    "dev_tuned": 0.05
+   },
+   "missing_test_scores": 0,
+   "test": {
+    "native_0.5": {
+     "safeguard": {
+      "n": 598,
+      "acc": 95.0,
+      "f1": 91.3,
+      "auc": 0.985,
+      "catch@1%fpr": 91.0,
+      "catch@5%fpr": 96.8,
+      "fpr": 0.0,
+      "tpr": 84.0
+     },
+     "jackhhao": {
+      "n": 262,
+      "acc": 90.8,
+      "f1": 90.7,
+      "auc": 0.978,
+      "catch@1%fpr": 69.8,
+      "catch@5%fpr": 96.4,
+      "fpr": 1.6,
+      "tpr": 84.2
+     },
+     "itw": {
+      "n": 478,
+      "acc": 81.4,
+      "f1": 77.8,
+      "auc": 0.892,
+      "catch@1%fpr": 30.3,
+      "catch@5%fpr": 60.1,
+      "fpr": 10.4,
+      "tpr": 71.6
+     },
+     "openpi": {
+      "n": 499,
+      "acc": 61.9,
+      "f1": 41.7,
+      "auc": 0.652,
+      "catch@1%fpr": 4.8,
+      "catch@5%fpr": 30.8,
+      "fpr": 3.2,
+      "tpr": 27.2
+     },
+     "deepset": {
+      "n": 116,
+      "acc": 67.2,
+      "f1": 53.7,
+      "auc": 0.871,
+      "catch@1%fpr": 53.3,
+      "catch@5%fpr": 71.7,
+      "fpr": 0.0,
+      "tpr": 36.7
+     },
+     "deepset-train546": {
+      "n": 546,
+      "acc": 78.0,
+      "f1": 59.2,
+      "auc": 0.877,
+      "catch@1%fpr": 41.9,
+      "catch@5%fpr": 69.5,
+      "fpr": 1.2,
+      "tpr": 42.9
+     },
+     "notinject": {
+      "n": 339,
+      "acc": 56.6,
+      "fpr": 43.4
+     },
+     "gandalf": {
+      "n": 223,
+      "acc": 100.0,
+      "tpr": 100.0
+     },
+     "adversarial": {
+      "n": 60,
+      "acc": 76.7,
+      "f1": 81.1,
+      "auc": 0.857,
+      "catch@1%fpr": 20.0,
+      "catch@5%fpr": 32.5,
+      "fpr": 20.0,
+      "tpr": 75.0
+     }
+    },
+    "dev_tuned": {
+     "safeguard": {
+      "n": 598,
+      "acc": 95.7,
+      "f1": 92.6,
+      "auc": 0.985,
+      "catch@1%fpr": 91.0,
+      "catch@5%fpr": 96.8,
+      "fpr": 0.0,
+      "tpr": 86.2
+     },
+     "jackhhao": {
+      "n": 262,
+      "acc": 91.6,
+      "f1": 91.5,
+      "auc": 0.978,
+      "catch@1%fpr": 69.8,
+      "catch@5%fpr": 96.4,
+      "fpr": 1.6,
+      "tpr": 85.6
+     },
+     "itw": {
+      "n": 478,
+      "acc": 80.3,
+      "f1": 77.5,
+      "auc": 0.892,
+      "catch@1%fpr": 30.3,
+      "catch@5%fpr": 60.1,
+      "fpr": 14.6,
+      "tpr": 74.3
+     },
+     "openpi": {
+      "n": 499,
+      "acc": 62.3,
+      "f1": 43.7,
+      "auc": 0.652,
+      "catch@1%fpr": 4.8,
+      "catch@5%fpr": 30.8,
+      "fpr": 4.4,
+      "tpr": 29.2
+     },
+     "deepset": {
+      "n": 116,
+      "acc": 69.0,
+      "f1": 57.1,
+      "auc": 0.871,
+      "catch@1%fpr": 53.3,
+      "catch@5%fpr": 71.7,
+      "fpr": 0.0,
+      "tpr": 40.0
+     },
+     "deepset-train546": {
+      "n": 546,
+      "acc": 78.9,
+      "f1": 61.5,
+      "auc": 0.877,
+      "catch@1%fpr": 41.9,
+      "catch@5%fpr": 69.5,
+      "fpr": 1.2,
+      "tpr": 45.3
+     },
+     "notinject": {
+      "n": 339,
+      "acc": 54.6,
+      "fpr": 45.4
+     },
+     "gandalf": {
+      "n": 223,
+      "acc": 100.0,
+      "tpr": 100.0
+     },
+     "adversarial": {
+      "n": 60,
+      "acc": 78.3,
+      "f1": 83.1,
+      "auc": 0.857,
+      "catch@1%fpr": 20.0,
+      "catch@5%fpr": 32.5,
+      "fpr": 25.0,
+      "tpr": 80.0
+     }
+    }
+   }
+  },
+  "deepset": {
+   "note": "Fine-tuned on deepset/prompt-injections, so its deepset numbers are in-distribution (the 546 deepset-train546 rows are its literal training data).",
+   "meta": {
+    "model": "deepset",
+    "repo": "deepset/deberta-v3-base-injection",
+    "revision": "80dda00d0b0d9a03917a7685e2ddbcd28e04dbb1",
+    "device": "mps",
+    "batch_size": 16,
+    "max_tokens": 512,
+    "attack_label": "INJECTION",
+    "latency_ms_median": 21.3,
+    "latency_n": 100,
+    "latency_note": "batch size 1, mps, Apple Silicon (10 cores, 16 GB)",
+    "rows_scored_this_run": 195,
+    "wall_s_this_run": 1.3,
+    "torch": "2.14.1",
+    "rows_scored_total": 7440,
+    "wall_s_total": 441.3
+   },
+   "thresholds": {
+    "native_0.5": 0.5,
+    "dev_tuned": 0.95
+   },
+   "missing_test_scores": 0,
+   "test": {
+    "native_0.5": {
+     "safeguard": {
+      "n": 598,
+      "acc": 48.3,
+      "f1": 54.2,
+      "auc": 0.645,
+      "catch@1%fpr": 4.8,
+      "catch@5%fpr": 12.8,
+      "fpr": 74.1,
+      "tpr": 97.3
+     },
+     "jackhhao": {
+      "n": 262,
+      "acc": 55.7,
+      "f1": 70.6,
+      "auc": 0.789,
+      "catch@1%fpr": 0.0,
+      "catch@5%fpr": 4.3,
+      "fpr": 94.3,
+      "tpr": 100.0
+     },
+     "itw": {
+      "n": 478,
+      "acc": 46.4,
+      "f1": 62.9,
+      "auc": 0.54,
+      "catch@1%fpr": 0.0,
+      "catch@5%fpr": 0.9,
+      "fpr": 98.1,
+      "tpr": 99.5
+     },
+     "openpi": {
+      "n": 499,
+      "acc": 54.7,
+      "f1": 68.9,
+      "auc": 0.86,
+      "catch@1%fpr": 0.4,
+      "catch@5%fpr": 8.0,
+      "fpr": 90.8,
+      "tpr": 100.0
+     },
+     "deepset": {
+      "n": 116,
+      "acc": 99.1,
+      "f1": 99.2,
+      "auc": 0.997,
+      "catch@1%fpr": 98.3,
+      "catch@5%fpr": 98.3,
+      "fpr": 0.0,
+      "tpr": 98.3
+     },
+     "deepset-train546": {
+      "n": 546,
+      "acc": 99.8,
+      "f1": 99.8,
+      "auc": 1.0,
+      "catch@1%fpr": 100.0,
+      "catch@5%fpr": 100.0,
+      "fpr": 0.3,
+      "tpr": 100.0
+     },
+     "notinject": {
+      "n": 339,
+      "acc": 28.6,
+      "fpr": 71.4
+     },
+     "gandalf": {
+      "n": 223,
+      "acc": 90.1,
+      "tpr": 90.1
+     },
+     "adversarial": {
+      "n": 60,
+      "acc": 75.0,
+      "f1": 83.9,
+      "auc": 0.782,
+      "catch@1%fpr": 15.0,
+      "catch@5%fpr": 27.5,
+      "fpr": 70.0,
+      "tpr": 97.5
+     }
+    },
+    "dev_tuned": {
+     "safeguard": {
+      "n": 598,
+      "acc": 49.2,
+      "f1": 54.4,
+      "auc": 0.645,
+      "catch@1%fpr": 4.8,
+      "catch@5%fpr": 12.8,
+      "fpr": 72.4,
+      "tpr": 96.3
+     },
+     "jackhhao": {
+      "n": 262,
+      "acc": 56.5,
+      "f1": 70.9,
+      "auc": 0.789,
+      "catch@1%fpr": 0.0,
+      "catch@5%fpr": 4.3,
+      "fpr": 92.7,
+      "tpr": 100.0
+     },
+     "itw": {
+      "n": 478,
+      "acc": 47.3,
+      "f1": 63.3,
+      "auc": 0.54,
+      "catch@1%fpr": 0.0,
+      "catch@5%fpr": 0.9,
+      "fpr": 96.5,
+      "tpr": 99.5
+     },
+     "openpi": {
+      "n": 499,
+      "acc": 56.9,
+      "f1": 69.9,
+      "auc": 0.86,
+      "catch@1%fpr": 0.4,
+      "catch@5%fpr": 8.0,
+      "fpr": 86.3,
+      "tpr": 100.0
+     },
+     "deepset": {
+      "n": 116,
+      "acc": 97.4,
+      "f1": 97.4,
+      "auc": 0.997,
+      "catch@1%fpr": 98.3,
+      "catch@5%fpr": 98.3,
+      "fpr": 0.0,
+      "tpr": 95.0
+     },
+     "deepset-train546": {
+      "n": 546,
+      "acc": 99.8,
+      "f1": 99.8,
+      "auc": 1.0,
+      "catch@1%fpr": 100.0,
+      "catch@5%fpr": 100.0,
+      "fpr": 0.0,
+      "tpr": 99.5
+     },
+     "notinject": {
+      "n": 339,
+      "acc": 32.7,
+      "fpr": 67.3
+     },
+     "gandalf": {
+      "n": 223,
+      "acc": 89.7,
+      "tpr": 89.7
+     },
+     "adversarial": {
+      "n": 60,
+      "acc": 75.0,
+      "f1": 83.9,
+      "auc": 0.782,
+      "catch@1%fpr": 15.0,
+      "catch@5%fpr": 27.5,
+      "fpr": 70.0,
+      "tpr": 97.5
+     }
+    }
+   }
+  },
+  "promptguard2": {
+   "note": "Meta has not published the training set.",
+   "status": {
+    "model": "promptguard2",
+    "status": "blocked",
+    "reason": "gated model, needs HF token + license acceptance",
+    "date": "2026-10-19",
+    "how_to_run": "HF_TOKEN=... python -m englishnet.baselines score --models promptguard2",
+    "error": "You are trying to access a gated repo."
+   }
+  },
+  "tfidf": {
+   "note": "Trained on our train split only (4 training sources); deepset, notinject and gandalf are unseen.",
+   "meta": {
+    "model": "tfidf",
+    "C": 100,
+    "dev_mean_auc_by_C": {
+     "0.1": 0.961,
+     "0.3": 0.9629,
+     "1": 0.9653,
+     "3": 0.9664,
+     "10": 0.9674,
+     "30": 0.968,
+     "100": 0.9686
+    },
+    "n_train": 2987,
+    "vocab": 48920,
+    "device": "cpu",
+    "latency_ms_median": 0.17,
+    "latency_n": 100,
+    "latency_note": "one text at a time, CPU",
+    "wall_s_this_run": 0.3
+   },
+   "thresholds": {
+    "native_0.5": 0.5,
+    "dev_tuned": 0.36
+   },
+   "missing_test_scores": 0,
+   "test": {
+    "native_0.5": {
+     "safeguard": {
+      "n": 598,
+      "acc": 97.3,
+      "f1": 95.6,
+      "auc": 0.995,
+      "catch@1%fpr": 95.7,
+      "catch@5%fpr": 97.3,
+      "fpr": 0.5,
+      "tpr": 92.6
+     },
+     "jackhhao": {
+      "n": 262,
+      "acc": 95.0,
+      "f1": 95.1,
+      "auc": 0.994,
+      "catch@1%fpr": 94.2,
+      "catch@5%fpr": 97.1,
+      "fpr": 0.0,
+      "tpr": 90.6
+     },
+     "itw": {
+      "n": 478,
+      "acc": 83.7,
+      "f1": 81.7,
+      "auc": 0.901,
+      "catch@1%fpr": 42.2,
+      "catch@5%fpr": 71.6,
+      "fpr": 13.1,
+      "tpr": 79.8
+     },
+     "openpi": {
+      "n": 499,
+      "acc": 99.8,
+      "f1": 99.8,
+      "auc": 1.0,
+      "catch@1%fpr": 100.0,
+      "catch@5%fpr": 100.0,
+      "fpr": 0.4,
+      "tpr": 100.0
+     },
+     "deepset": {
+      "n": 116,
+      "acc": 53.4,
+      "f1": 18.2,
+      "auc": 0.692,
+      "catch@1%fpr": 28.3,
+      "catch@5%fpr": 38.3,
+      "fpr": 0.0,
+      "tpr": 10.0
+     },
+     "deepset-train546": {
+      "n": 546,
+      "acc": 65.4,
+      "f1": 14.5,
+      "auc": 0.74,
+      "catch@1%fpr": 15.3,
+      "catch@5%fpr": 44.8,
+      "fpr": 0.6,
+      "tpr": 7.9
+     },
+     "notinject": {
+      "n": 339,
+      "acc": 96.5,
+      "fpr": 3.5
+     },
+     "gandalf": {
+      "n": 223,
+      "acc": 44.4,
+      "tpr": 44.4
+     },
+     "adversarial": {
+      "n": 60,
+      "acc": 40.0,
+      "f1": 25.0,
+      "auc": 0.637,
+      "catch@1%fpr": 0.0,
+      "catch@5%fpr": 15.0,
+      "fpr": 10.0,
+      "tpr": 15.0
+     }
+    },
+    "dev_tuned": {
+     "safeguard": {
+      "n": 598,
+      "acc": 97.7,
+      "f1": 96.2,
+      "auc": 0.995,
+      "catch@1%fpr": 95.7,
+      "catch@5%fpr": 97.3,
+      "fpr": 1.0,
+      "tpr": 94.7
+     },
+     "jackhhao": {
+      "n": 262,
+      "acc": 95.0,
+      "f1": 95.1,
+      "auc": 0.994,
+      "catch@1%fpr": 94.2,
+      "catch@5%fpr": 97.1,
+      "fpr": 0.8,
+      "tpr": 91.4
+     },
+     "itw": {
+      "n": 478,
+      "acc": 82.0,
+      "f1": 80.7,
+      "auc": 0.901,
+      "catch@1%fpr": 42.2,
+      "catch@5%fpr": 71.6,
+      "fpr": 18.5,
+      "tpr": 82.6
+     },
+     "openpi": {
+      "n": 499,
+      "acc": 99.8,
+      "f1": 99.8,
+      "auc": 1.0,
+      "catch@1%fpr": 100.0,
+      "catch@5%fpr": 100.0,
+      "fpr": 0.4,
+      "tpr": 100.0
+     },
+     "deepset": {
+      "n": 116,
+      "acc": 55.2,
+      "f1": 23.5,
+      "auc": 0.692,
+      "catch@1%fpr": 28.3,
+      "catch@5%fpr": 38.3,
+      "fpr": 0.0,
+      "tpr": 13.3
+     },
+     "deepset-train546": {
+      "n": 546,
+      "acc": 66.8,
+      "f1": 21.0,
+      "auc": 0.74,
+      "catch@1%fpr": 15.3,
+      "catch@5%fpr": 44.8,
+      "fpr": 0.6,
+      "tpr": 11.8
+     },
+     "notinject": {
+      "n": 339,
+      "acc": 95.0,
+      "fpr": 5.0
+     },
+     "gandalf": {
+      "n": 223,
+      "acc": 52.0,
+      "tpr": 52.0
+     },
+     "adversarial": {
+      "n": 60,
+      "acc": 41.7,
+      "f1": 31.4,
+      "auc": 0.637,
+      "catch@1%fpr": 0.0,
+      "catch@5%fpr": 15.0,
+      "fpr": 15.0,
+      "tpr": 20.0
+     }
+    }
+   }
+  },
+  "claude": {
+   "note": "Zero-shot; returns a hard label, so AUC and catch@FPR are computed on a 0/1 score.",
+   "status": {
+    "model": "claude",
+    "status": "deferred",
+    "reason": "Anthropic API refused the probe call with a billing/credit error",
+    "date": "2026-10-19",
+    "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CgCNkE6LKzmAh6uEXApDT'}",
+    "cost_estimate": {
+     "calls": 3121,
+     "input_tokens_est": 621145,
+     "output_tokens_max": 15605,
+     "usd_est": 2.8
+    },
+    "how_to_run": "python -m englishnet.baselines score --models claude"
+   }
+  }
+ }
+}

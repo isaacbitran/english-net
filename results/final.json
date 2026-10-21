@@ -1,0 +1,1989 @@
+{
+ "jev_model": "jev-1.13.0",
+ "network_version": 6,
+ "n_test": 3121,
+ "models": {
+  "Single Jev question (t=0.5)": {
+   "safeguard": {
+    "n": 598,
+    "acc": 90.6,
+    "f1": 82.5,
+    "auc": 0.994,
+    "catch@1%fpr": 95.7,
+    "catch@5%fpr": 98.4,
+    "fpr": 0.0,
+    "tpr": 70.2
+   },
+   "jackhhao": {
+    "n": 262,
+    "acc": 98.1,
+    "f1": 98.2,
+    "auc": 0.995,
+    "catch@1%fpr": 97.8,
+    "catch@5%fpr": 97.8,
+    "fpr": 0.0,
+    "tpr": 96.4
+   },
+   "itw": {
+    "n": 478,
+    "acc": 77.2,
+    "f1": 77.8,
+    "auc": 0.882,
+    "catch@1%fpr": 45.4,
+    "catch@5%fpr": 61.5,
+    "fpr": 31.5,
+    "tpr": 87.6
+   },
+   "openpi": {
+    "n": 499,
+    "acc": 79.0,
+    "f1": 73.4,
+    "auc": 0.997,
+    "catch@1%fpr": 80.0,
+    "catch@5%fpr": 100.0,
+    "fpr": 0.0,
+    "tpr": 58.0
+   },
+   "deepset": {
+    "n": 116,
+    "acc": 75.0,
+    "f1": 68.1,
+    "auc": 0.978,
+    "catch@1%fpr": 58.3,
+    "catch@5%fpr": 81.7,
+    "fpr": 0.0,
+    "tpr": 51.7
+   },
+   "deepset_extra": {
+    "n": 546,
+    "acc": 86.6,
+    "f1": 78.1,
+    "auc": 0.994,
+    "catch@1%fpr": 89.2,
+    "catch@5%fpr": 97.0,
+    "fpr": 0.0,
+    "tpr": 64.0
+   },
+   "notinject": {
+    "n": 339,
+    "acc": 98.8,
+    "fpr": 1.2
+   },
+   "gandalf": {
+    "n": 223,
+    "acc": 89.7,
+    "tpr": 89.7
+   },
+   "adversarial": {
+    "n": 60,
+    "acc": 91.7,
+    "f1": 93.5,
+    "auc": 0.985,
+    "catch@1%fpr": 85.0,
+    "catch@5%fpr": 90.0,
+    "fpr": 5.0,
+    "tpr": 90.0
+   },
+   "macro_train_sources": {
+    "acc": 86.2,
+    "auc": 0.967
+   }
+  },
+  "Single Jev question (dev-tuned t=0.21)": {
+   "safeguard": {
+    "n": 598,
+    "acc": 95.7,
+    "f1": 92.7,
+    "auc": 0.994,
+    "catch@1%fpr": 95.7,
+    "catch@5%fpr": 98.4,
+    "fpr": 0.5,
+    "tpr": 87.2
+   },
+   "jackhhao": {
+    "n": 262,
+    "acc": 97.3,
+    "f1": 97.5,
+    "auc": 0.995,
+    "catch@1%fpr": 97.8,
+    "catch@5%fpr": 97.8,
+    "fpr": 3.3,
+    "tpr": 97.8
+   },
+   "itw": {
+    "n": 478,
+    "acc": 69.7,
+    "f1": 73.0,
+    "auc": 0.882,
+    "catch@1%fpr": 45.4,
+    "catch@5%fpr": 61.5,
+    "fpr": 47.3,
+    "tpr": 89.9
+   },
+   "openpi": {
+    "n": 499,
+    "acc": 86.2,
+    "f1": 84.1,
+    "auc": 0.997,
+    "catch@1%fpr": 80.0,
+    "catch@5%fpr": 100.0,
+    "fpr": 0.4,
+    "tpr": 72.8
+   },
+   "deepset": {
+    "n": 116,
+    "acc": 79.3,
+    "f1": 75.5,
+    "auc": 0.978,
+    "catch@1%fpr": 58.3,
+    "catch@5%fpr": 81.7,
+    "fpr": 1.8,
+    "tpr": 61.7
+   },
+   "deepset_extra": {
+    "n": 546,
+    "acc": 92.9,
+    "f1": 89.4,
+    "auc": 0.994,
+    "catch@1%fpr": 89.2,
+    "catch@5%fpr": 97.0,
+    "fpr": 0.0,
+    "tpr": 80.8
+   },
+   "notinject": {
+    "n": 339,
+    "acc": 95.0,
+    "fpr": 5.0
+   },
+   "gandalf": {
+    "n": 223,
+    "acc": 96.9,
+    "tpr": 96.9
+   },
+   "adversarial": {
+    "n": 60,
+    "acc": 93.3,
+    "f1": 95.0,
+    "auc": 0.985,
+    "catch@1%fpr": 85.0,
+    "catch@5%fpr": 90.0,
+    "fpr": 10.0,
+    "tpr": 95.0
+   },
+   "macro_train_sources": {
+    "acc": 87.2,
+    "auc": 0.967
+   }
+  },
+  "English Net v0 (30 hand-written)": {
+   "safeguard": {
+    "n": 598,
+    "acc": 96.5,
+    "f1": 94.2,
+    "auc": 0.98,
+    "catch@1%fpr": 91.5,
+    "catch@5%fpr": 93.1,
+    "fpr": 1.2,
+    "tpr": 91.5
+   },
+   "jackhhao": {
+    "n": 262,
+    "acc": 96.6,
+    "f1": 96.7,
+    "auc": 0.98,
+    "catch@1%fpr": 95.7,
+    "catch@5%fpr": 95.7,
+    "fpr": 0.0,
+    "tpr": 93.5
+   },
+   "itw": {
+    "n": 478,
+    "acc": 80.3,
+    "f1": 80.1,
+    "auc": 0.889,
+    "catch@1%fpr": 45.4,
+    "catch@5%fpr": 67.4,
+    "fpr": 25.0,
+    "tpr": 86.7
+   },
+   "openpi": {
+    "n": 499,
+    "acc": 88.4,
+    "f1": 87.1,
+    "auc": 0.968,
+    "catch@1%fpr": 75.2,
+    "catch@5%fpr": 83.2,
+    "fpr": 1.6,
+    "tpr": 78.4
+   },
+   "deepset": {
+    "n": 116,
+    "acc": 73.3,
+    "f1": 65.9,
+    "auc": 0.938,
+    "catch@1%fpr": 41.7,
+    "catch@5%fpr": 81.7,
+    "fpr": 1.8,
+    "tpr": 50.0
+   },
+   "deepset_extra": {
+    "n": 546,
+    "acc": 85.7,
+    "f1": 77.2,
+    "auc": 0.967,
+    "catch@1%fpr": 64.0,
+    "catch@5%fpr": 87.7,
+    "fpr": 2.0,
+    "tpr": 65.0
+   },
+   "notinject": {
+    "n": 339,
+    "acc": 97.1,
+    "fpr": 2.9
+   },
+   "gandalf": {
+    "n": 223,
+    "acc": 95.1,
+    "tpr": 95.1
+   },
+   "adversarial": {
+    "n": 60,
+    "acc": 90.0,
+    "f1": 92.3,
+    "auc": 0.968,
+    "catch@1%fpr": 75.0,
+    "catch@5%fpr": 85.0,
+    "fpr": 10.0,
+    "tpr": 90.0
+   },
+   "macro_train_sources": {
+    "acc": 90.4,
+    "auc": 0.954
+   }
+  },
+  "English Net v5 (6 evolved/hand-written neurons, no broad question)": {
+   "safeguard": {
+    "n": 598,
+    "acc": 98.0,
+    "f1": 96.8,
+    "auc": 0.994,
+    "catch@1%fpr": 96.3,
+    "catch@5%fpr": 97.9,
+    "fpr": 0.7,
+    "tpr": 95.2
+   },
+   "jackhhao": {
+    "n": 262,
+    "acc": 94.7,
+    "f1": 94.9,
+    "auc": 0.979,
+    "catch@1%fpr": 84.2,
+    "catch@5%fpr": 95.7,
+    "fpr": 3.3,
+    "tpr": 92.8
+   },
+   "itw": {
+    "n": 478,
+    "acc": 79.1,
+    "f1": 79.3,
+    "auc": 0.885,
+    "catch@1%fpr": 28.0,
+    "catch@5%fpr": 64.2,
+    "fpr": 28.5,
+    "tpr": 88.1
+   },
+   "openpi": {
+    "n": 499,
+    "acc": 96.0,
+    "f1": 96.1,
+    "auc": 0.997,
+    "catch@1%fpr": 92.8,
+    "catch@5%fpr": 98.0,
+    "fpr": 7.2,
+    "tpr": 99.2
+   },
+   "deepset": {
+    "n": 116,
+    "acc": 81.9,
+    "f1": 79.6,
+    "auc": 0.935,
+    "catch@1%fpr": 55.0,
+    "catch@5%fpr": 80.0,
+    "fpr": 3.6,
+    "tpr": 68.3
+   },
+   "deepset_extra": {
+    "n": 546,
+    "acc": 91.2,
+    "f1": 86.7,
+    "auc": 0.984,
+    "catch@1%fpr": 81.8,
+    "catch@5%fpr": 92.1,
+    "fpr": 0.6,
+    "tpr": 77.3
+   },
+   "notinject": {
+    "n": 339,
+    "acc": 97.3,
+    "fpr": 2.7
+   },
+   "gandalf": {
+    "n": 223,
+    "acc": 82.1,
+    "tpr": 82.1
+   },
+   "adversarial": {
+    "n": 60,
+    "acc": 90.0,
+    "f1": 92.1,
+    "auc": 0.961,
+    "catch@1%fpr": 75.0,
+    "catch@5%fpr": 90.0,
+    "fpr": 5.0,
+    "tpr": 87.5
+   },
+   "macro_train_sources": {
+    "acc": 91.9,
+    "auc": 0.964
+   }
+  },
+  "English Net final (v6, 7 neurons)": {
+   "safeguard": {
+    "n": 598,
+    "acc": 96.7,
+    "f1": 94.4,
+    "auc": 0.995,
+    "catch@1%fpr": 97.9,
+    "catch@5%fpr": 98.9,
+    "fpr": 0.2,
+    "tpr": 89.9
+   },
+   "jackhhao": {
+    "n": 262,
+    "acc": 95.4,
+    "f1": 95.6,
+    "auc": 0.994,
+    "catch@1%fpr": 92.8,
+    "catch@5%fpr": 97.8,
+    "fpr": 1.6,
+    "tpr": 92.8
+   },
+   "itw": {
+    "n": 478,
+    "acc": 76.6,
+    "f1": 77.1,
+    "auc": 0.876,
+    "catch@1%fpr": 39.4,
+    "catch@5%fpr": 63.8,
+    "fpr": 31.9,
+    "tpr": 86.7
+   },
+   "openpi": {
+    "n": 499,
+    "acc": 97.8,
+    "f1": 97.8,
+    "auc": 0.999,
+    "catch@1%fpr": 96.8,
+    "catch@5%fpr": 99.2,
+    "fpr": 1.2,
+    "tpr": 96.8
+   },
+   "deepset": {
+    "n": 116,
+    "acc": 81.0,
+    "f1": 78.0,
+    "auc": 0.968,
+    "catch@1%fpr": 61.7,
+    "catch@5%fpr": 83.3,
+    "fpr": 1.8,
+    "tpr": 65.0
+   },
+   "deepset_extra": {
+    "n": 546,
+    "acc": 91.2,
+    "f1": 86.7,
+    "auc": 0.992,
+    "catch@1%fpr": 86.2,
+    "catch@5%fpr": 97.0,
+    "fpr": 0.3,
+    "tpr": 76.8
+   },
+   "notinject": {
+    "n": 339,
+    "acc": 97.6,
+    "fpr": 2.4
+   },
+   "gandalf": {
+    "n": 223,
+    "acc": 89.2,
+    "tpr": 89.2
+   },
+   "adversarial": {
+    "n": 60,
+    "acc": 93.3,
+    "f1": 94.9,
+    "auc": 0.984,
+    "catch@1%fpr": 85.0,
+    "catch@5%fpr": 95.0,
+    "fpr": 5.0,
+    "tpr": 92.5
+   },
+   "macro_train_sources": {
+    "acc": 91.6,
+    "auc": 0.966
+   }
+  },
+  "piguard (t=0.5)": {
+   "safeguard": {
+    "n": 598,
+    "acc": 84.1,
+    "f1": 70.8,
+    "auc": 0.903,
+    "catch@1%fpr": 45.2,
+    "catch@5%fpr": 60.6,
+    "fpr": 5.4,
+    "tpr": 61.2
+   },
+   "jackhhao": {
+    "n": 262,
+    "acc": 95.4,
+    "f1": 95.7,
+    "auc": 0.995,
+    "catch@1%fpr": 94.2,
+    "catch@5%fpr": 98.6,
+    "fpr": 4.9,
+    "tpr": 95.7
+   },
+   "itw": {
+    "n": 478,
+    "acc": 84.9,
+    "f1": 84.5,
+    "auc": 0.93,
+    "catch@1%fpr": 28.4,
+    "catch@5%fpr": 77.1,
+    "fpr": 19.6,
+    "tpr": 90.4
+   },
+   "openpi": {
+    "n": 499,
+    "acc": 83.2,
+    "f1": 81.7,
+    "auc": 0.93,
+    "catch@1%fpr": 14.8,
+    "catch@5%fpr": 63.6,
+    "fpr": 8.8,
+    "tpr": 75.2
+   },
+   "deepset": {
+    "n": 116,
+    "acc": 82.8,
+    "f1": 80.0,
+    "auc": 0.96,
+    "catch@1%fpr": 81.7,
+    "catch@5%fpr": 91.7,
+    "fpr": 0.0,
+    "tpr": 66.7
+   },
+   "deepset_extra": {
+    "n": 546,
+    "acc": 96.7,
+    "f1": 95.4,
+    "auc": 0.996,
+    "catch@1%fpr": 96.1,
+    "catch@5%fpr": 99.0,
+    "fpr": 0.0,
+    "tpr": 91.1
+   },
+   "notinject": {
+    "n": 339,
+    "acc": 88.5,
+    "fpr": 11.5
+   },
+   "gandalf": {
+    "n": 223,
+    "acc": 93.7,
+    "tpr": 93.7
+   },
+   "adversarial": {
+    "n": 60,
+    "acc": 71.7,
+    "f1": 74.6,
+    "auc": 0.874,
+    "catch@1%fpr": 25.0,
+    "catch@5%fpr": 60.0,
+    "fpr": 10.0,
+    "tpr": 62.5
+   },
+   "macro_train_sources": {
+    "acc": 86.9,
+    "auc": 0.94
+   }
+  },
+  "piguard (dev-tuned t=0.11)": {
+   "safeguard": {
+    "n": 598,
+    "acc": 84.8,
+    "f1": 74.5,
+    "auc": 0.903,
+    "catch@1%fpr": 45.2,
+    "catch@5%fpr": 60.6,
+    "fpr": 8.8,
+    "tpr": 70.7
+   },
+   "jackhhao": {
+    "n": 262,
+    "acc": 95.8,
+    "f1": 96.2,
+    "auc": 0.995,
+    "catch@1%fpr": 94.2,
+    "catch@5%fpr": 98.6,
+    "fpr": 8.1,
+    "tpr": 99.3
+   },
+   "itw": {
+    "n": 478,
+    "acc": 79.1,
+    "f1": 80.7,
+    "auc": 0.93,
+    "catch@1%fpr": 28.4,
+    "catch@5%fpr": 77.1,
+    "fpr": 35.0,
+    "tpr": 95.9
+   },
+   "openpi": {
+    "n": 499,
+    "acc": 83.6,
+    "f1": 83.5,
+    "auc": 0.93,
+    "catch@1%fpr": 14.8,
+    "catch@5%fpr": 63.6,
+    "fpr": 16.1,
+    "tpr": 83.2
+   },
+   "deepset": {
+    "n": 116,
+    "acc": 87.1,
+    "f1": 85.7,
+    "auc": 0.96,
+    "catch@1%fpr": 81.7,
+    "catch@5%fpr": 91.7,
+    "fpr": 0.0,
+    "tpr": 75.0
+   },
+   "deepset_extra": {
+    "n": 546,
+    "acc": 98.0,
+    "f1": 97.3,
+    "auc": 0.996,
+    "catch@1%fpr": 96.1,
+    "catch@5%fpr": 99.0,
+    "fpr": 0.9,
+    "tpr": 96.1
+   },
+   "notinject": {
+    "n": 339,
+    "acc": 84.4,
+    "fpr": 15.6
+   },
+   "gandalf": {
+    "n": 223,
+    "acc": 96.9,
+    "tpr": 96.9
+   },
+   "adversarial": {
+    "n": 60,
+    "acc": 76.7,
+    "f1": 81.1,
+    "auc": 0.874,
+    "catch@1%fpr": 25.0,
+    "catch@5%fpr": 60.0,
+    "fpr": 20.0,
+    "tpr": 75.0
+   },
+   "macro_train_sources": {
+    "acc": 85.8,
+    "auc": 0.94
+   }
+  },
+  "protectai (t=0.5)": {
+   "safeguard": {
+    "n": 598,
+    "acc": 95.0,
+    "f1": 91.3,
+    "auc": 0.985,
+    "catch@1%fpr": 91.0,
+    "catch@5%fpr": 96.8,
+    "fpr": 0.0,
+    "tpr": 84.0
+   },
+   "jackhhao": {
+    "n": 262,
+    "acc": 90.8,
+    "f1": 90.7,
+    "auc": 0.978,
+    "catch@1%fpr": 69.8,
+    "catch@5%fpr": 96.4,
+    "fpr": 1.6,
+    "tpr": 84.2
+   },
+   "itw": {
+    "n": 478,
+    "acc": 81.4,
+    "f1": 77.8,
+    "auc": 0.892,
+    "catch@1%fpr": 30.3,
+    "catch@5%fpr": 60.1,
+    "fpr": 10.4,
+    "tpr": 71.6
+   },
+   "openpi": {
+    "n": 499,
+    "acc": 61.9,
+    "f1": 41.7,
+    "auc": 0.652,
+    "catch@1%fpr": 4.8,
+    "catch@5%fpr": 30.8,
+    "fpr": 3.2,
+    "tpr": 27.2
+   },
+   "deepset": {
+    "n": 116,
+    "acc": 67.2,
+    "f1": 53.7,
+    "auc": 0.871,
+    "catch@1%fpr": 53.3,
+    "catch@5%fpr": 71.7,
+    "fpr": 0.0,
+    "tpr": 36.7
+   },
+   "deepset_extra": {
+    "n": 546,
+    "acc": 78.0,
+    "f1": 59.2,
+    "auc": 0.877,
+    "catch@1%fpr": 41.9,
+    "catch@5%fpr": 69.5,
+    "fpr": 1.2,
+    "tpr": 42.9
+   },
+   "notinject": {
+    "n": 339,
+    "acc": 56.6,
+    "fpr": 43.4
+   },
+   "gandalf": {
+    "n": 223,
+    "acc": 100.0,
+    "tpr": 100.0
+   },
+   "adversarial": {
+    "n": 60,
+    "acc": 76.7,
+    "f1": 81.1,
+    "auc": 0.857,
+    "catch@1%fpr": 20.0,
+    "catch@5%fpr": 32.5,
+    "fpr": 20.0,
+    "tpr": 75.0
+   },
+   "macro_train_sources": {
+    "acc": 82.3,
+    "auc": 0.877
+   }
+  },
+  "protectai (dev-tuned t=0.05)": {
+   "safeguard": {
+    "n": 598,
+    "acc": 95.7,
+    "f1": 92.6,
+    "auc": 0.985,
+    "catch@1%fpr": 91.0,
+    "catch@5%fpr": 96.8,
+    "fpr": 0.0,
+    "tpr": 86.2
+   },
+   "jackhhao": {
+    "n": 262,
+    "acc": 91.6,
+    "f1": 91.5,
+    "auc": 0.978,
+    "catch@1%fpr": 69.8,
+    "catch@5%fpr": 96.4,
+    "fpr": 1.6,
+    "tpr": 85.6
+   },
+   "itw": {
+    "n": 478,
+    "acc": 80.3,
+    "f1": 77.5,
+    "auc": 0.892,
+    "catch@1%fpr": 30.3,
+    "catch@5%fpr": 60.1,
+    "fpr": 14.6,
+    "tpr": 74.3
+   },
+   "openpi": {
+    "n": 499,
+    "acc": 62.3,
+    "f1": 43.7,
+    "auc": 0.652,
+    "catch@1%fpr": 4.8,
+    "catch@5%fpr": 30.8,
+    "fpr": 4.4,
+    "tpr": 29.2
+   },
+   "deepset": {
+    "n": 116,
+    "acc": 69.0,
+    "f1": 57.1,
+    "auc": 0.871,
+    "catch@1%fpr": 53.3,
+    "catch@5%fpr": 71.7,
+    "fpr": 0.0,
+    "tpr": 40.0
+   },
+   "deepset_extra": {
+    "n": 546,
+    "acc": 78.9,
+    "f1": 61.5,
+    "auc": 0.877,
+    "catch@1%fpr": 41.9,
+    "catch@5%fpr": 69.5,
+    "fpr": 1.2,
+    "tpr": 45.3
+   },
+   "notinject": {
+    "n": 339,
+    "acc": 54.6,
+    "fpr": 45.4
+   },
+   "gandalf": {
+    "n": 223,
+    "acc": 100.0,
+    "tpr": 100.0
+   },
+   "adversarial": {
+    "n": 60,
+    "acc": 78.3,
+    "f1": 83.1,
+    "auc": 0.857,
+    "catch@1%fpr": 20.0,
+    "catch@5%fpr": 32.5,
+    "fpr": 25.0,
+    "tpr": 80.0
+   },
+   "macro_train_sources": {
+    "acc": 82.5,
+    "auc": 0.877
+   }
+  },
+  "deepset (t=0.5)": {
+   "safeguard": {
+    "n": 598,
+    "acc": 48.3,
+    "f1": 54.2,
+    "auc": 0.645,
+    "catch@1%fpr": 4.8,
+    "catch@5%fpr": 12.8,
+    "fpr": 74.1,
+    "tpr": 97.3
+   },
+   "jackhhao": {
+    "n": 262,
+    "acc": 55.7,
+    "f1": 70.6,
+    "auc": 0.789,
+    "catch@1%fpr": 0.0,
+    "catch@5%fpr": 4.3,
+    "fpr": 94.3,
+    "tpr": 100.0
+   },
+   "itw": {
+    "n": 478,
+    "acc": 46.4,
+    "f1": 62.9,
+    "auc": 0.54,
+    "catch@1%fpr": 0.0,
+    "catch@5%fpr": 0.9,
+    "fpr": 98.1,
+    "tpr": 99.5
+   },
+   "openpi": {
+    "n": 499,
+    "acc": 54.7,
+    "f1": 68.9,
+    "auc": 0.86,
+    "catch@1%fpr": 0.4,
+    "catch@5%fpr": 8.0,
+    "fpr": 90.8,
+    "tpr": 100.0
+   },
+   "deepset": {
+    "n": 116,
+    "acc": 99.1,
+    "f1": 99.2,
+    "auc": 0.997,
+    "catch@1%fpr": 98.3,
+    "catch@5%fpr": 98.3,
+    "fpr": 0.0,
+    "tpr": 98.3
+   },
+   "deepset_extra": {
+    "n": 546,
+    "acc": 99.8,
+    "f1": 99.8,
+    "auc": 1.0,
+    "catch@1%fpr": 100.0,
+    "catch@5%fpr": 100.0,
+    "fpr": 0.3,
+    "tpr": 100.0
+   },
+   "notinject": {
+    "n": 339,
+    "acc": 28.6,
+    "fpr": 71.4
+   },
+   "gandalf": {
+    "n": 223,
+    "acc": 90.1,
+    "tpr": 90.1
+   },
+   "adversarial": {
+    "n": 60,
+    "acc": 75.0,
+    "f1": 83.9,
+    "auc": 0.782,
+    "catch@1%fpr": 15.0,
+    "catch@5%fpr": 27.5,
+    "fpr": 70.0,
+    "tpr": 97.5
+   },
+   "macro_train_sources": {
+    "acc": 51.3,
+    "auc": 0.708
+   }
+  },
+  "deepset (dev-tuned t=0.95)": {
+   "safeguard": {
+    "n": 598,
+    "acc": 49.2,
+    "f1": 54.4,
+    "auc": 0.645,
+    "catch@1%fpr": 4.8,
+    "catch@5%fpr": 12.8,
+    "fpr": 72.4,
+    "tpr": 96.3
+   },
+   "jackhhao": {
+    "n": 262,
+    "acc": 56.5,
+    "f1": 70.9,
+    "auc": 0.789,
+    "catch@1%fpr": 0.0,
+    "catch@5%fpr": 4.3,
+    "fpr": 92.7,
+    "tpr": 100.0
+   },
+   "itw": {
+    "n": 478,
+    "acc": 47.3,
+    "f1": 63.3,
+    "auc": 0.54,
+    "catch@1%fpr": 0.0,
+    "catch@5%fpr": 0.9,
+    "fpr": 96.5,
+    "tpr": 99.5
+   },
+   "openpi": {
+    "n": 499,
+    "acc": 56.9,
+    "f1": 69.9,
+    "auc": 0.86,
+    "catch@1%fpr": 0.4,
+    "catch@5%fpr": 8.0,
+    "fpr": 86.3,
+    "tpr": 100.0
+   },
+   "deepset": {
+    "n": 116,
+    "acc": 97.4,
+    "f1": 97.4,
+    "auc": 0.997,
+    "catch@1%fpr": 98.3,
+    "catch@5%fpr": 98.3,
+    "fpr": 0.0,
+    "tpr": 95.0
+   },
+   "deepset_extra": {
+    "n": 546,
+    "acc": 99.8,
+    "f1": 99.8,
+    "auc": 1.0,
+    "catch@1%fpr": 100.0,
+    "catch@5%fpr": 100.0,
+    "fpr": 0.0,
+    "tpr": 99.5
+   },
+   "notinject": {
+    "n": 339,
+    "acc": 32.7,
+    "fpr": 67.3
+   },
+   "gandalf": {
+    "n": 223,
+    "acc": 89.7,
+    "tpr": 89.7
+   },
+   "adversarial": {
+    "n": 60,
+    "acc": 75.0,
+    "f1": 83.9,
+    "auc": 0.782,
+    "catch@1%fpr": 15.0,
+    "catch@5%fpr": 27.5,
+    "fpr": 70.0,
+    "tpr": 97.5
+   },
+   "macro_train_sources": {
+    "acc": 52.5,
+    "auc": 0.708
+   }
+  },
+  "tfidf (t=0.5)": {
+   "safeguard": {
+    "n": 598,
+    "acc": 97.3,
+    "f1": 95.6,
+    "auc": 0.995,
+    "catch@1%fpr": 95.7,
+    "catch@5%fpr": 97.3,
+    "fpr": 0.5,
+    "tpr": 92.6
+   },
+   "jackhhao": {
+    "n": 262,
+    "acc": 95.0,
+    "f1": 95.1,
+    "auc": 0.994,
+    "catch@1%fpr": 94.2,
+    "catch@5%fpr": 97.1,
+    "fpr": 0.0,
+    "tpr": 90.6
+   },
+   "itw": {
+    "n": 478,
+    "acc": 83.7,
+    "f1": 81.7,
+    "auc": 0.901,
+    "catch@1%fpr": 42.2,
+    "catch@5%fpr": 71.6,
+    "fpr": 13.1,
+    "tpr": 79.8
+   },
+   "openpi": {
+    "n": 499,
+    "acc": 99.8,
+    "f1": 99.8,
+    "auc": 1.0,
+    "catch@1%fpr": 100.0,
+    "catch@5%fpr": 100.0,
+    "fpr": 0.4,
+    "tpr": 100.0
+   },
+   "deepset": {
+    "n": 116,
+    "acc": 53.4,
+    "f1": 18.2,
+    "auc": 0.692,
+    "catch@1%fpr": 28.3,
+    "catch@5%fpr": 38.3,
+    "fpr": 0.0,
+    "tpr": 10.0
+   },
+   "deepset_extra": {
+    "n": 546,
+    "acc": 65.4,
+    "f1": 14.5,
+    "auc": 0.74,
+    "catch@1%fpr": 15.3,
+    "catch@5%fpr": 44.8,
+    "fpr": 0.6,
+    "tpr": 7.9
+   },
+   "notinject": {
+    "n": 339,
+    "acc": 96.5,
+    "fpr": 3.5
+   },
+   "gandalf": {
+    "n": 223,
+    "acc": 44.4,
+    "tpr": 44.4
+   },
+   "adversarial": {
+    "n": 60,
+    "acc": 40.0,
+    "f1": 25.0,
+    "auc": 0.637,
+    "catch@1%fpr": 0.0,
+    "catch@5%fpr": 15.0,
+    "fpr": 10.0,
+    "tpr": 15.0
+   },
+   "macro_train_sources": {
+    "acc": 94.0,
+    "auc": 0.972
+   }
+  },
+  "tfidf (dev-tuned t=0.27)": {
+   "safeguard": {
+    "n": 598,
+    "acc": 97.8,
+    "f1": 96.5,
+    "auc": 0.995,
+    "catch@1%fpr": 95.7,
+    "catch@5%fpr": 97.3,
+    "fpr": 1.0,
+    "tpr": 95.2
+   },
+   "jackhhao": {
+    "n": 262,
+    "acc": 95.4,
+    "f1": 95.5,
+    "auc": 0.994,
+    "catch@1%fpr": 94.2,
+    "catch@5%fpr": 97.1,
+    "fpr": 0.8,
+    "tpr": 92.1
+   },
+   "itw": {
+    "n": 478,
+    "acc": 81.8,
+    "f1": 81.1,
+    "auc": 0.901,
+    "catch@1%fpr": 42.2,
+    "catch@5%fpr": 71.6,
+    "fpr": 21.5,
+    "tpr": 85.8
+   },
+   "openpi": {
+    "n": 499,
+    "acc": 99.6,
+    "f1": 99.6,
+    "auc": 1.0,
+    "catch@1%fpr": 100.0,
+    "catch@5%fpr": 100.0,
+    "fpr": 0.8,
+    "tpr": 100.0
+   },
+   "deepset": {
+    "n": 116,
+    "acc": 56.0,
+    "f1": 26.1,
+    "auc": 0.692,
+    "catch@1%fpr": 28.3,
+    "catch@5%fpr": 38.3,
+    "fpr": 0.0,
+    "tpr": 15.0
+   },
+   "deepset_extra": {
+    "n": 546,
+    "acc": 67.8,
+    "f1": 24.8,
+    "auc": 0.74,
+    "catch@1%fpr": 15.3,
+    "catch@5%fpr": 44.8,
+    "fpr": 0.6,
+    "tpr": 14.3
+   },
+   "notinject": {
+    "n": 339,
+    "acc": 92.6,
+    "fpr": 7.4
+   },
+   "gandalf": {
+    "n": 223,
+    "acc": 61.9,
+    "tpr": 61.9
+   },
+   "adversarial": {
+    "n": 60,
+    "acc": 41.7,
+    "f1": 36.4,
+    "auc": 0.637,
+    "catch@1%fpr": 0.0,
+    "catch@5%fpr": 15.0,
+    "fpr": 25.0,
+    "tpr": 25.0
+   },
+   "macro_train_sources": {
+    "acc": 93.6,
+    "auc": 0.972
+   }
+  }
+ },
+ "trajectory": {
+  "v00": {
+   "version": 0,
+   "n_active": 18,
+   "threshold": 0.54,
+   "test": {
+    "safeguard": {
+     "n": 598,
+     "acc": 96.5,
+     "f1": 94.2,
+     "auc": 0.98,
+     "catch@1%fpr": 91.5,
+     "catch@5%fpr": 93.1,
+     "fpr": 1.2,
+     "tpr": 91.5
+    },
+    "jackhhao": {
+     "n": 262,
+     "acc": 96.6,
+     "f1": 96.7,
+     "auc": 0.98,
+     "catch@1%fpr": 95.7,
+     "catch@5%fpr": 95.7,
+     "fpr": 0.0,
+     "tpr": 93.5
+    },
+    "itw": {
+     "n": 478,
+     "acc": 80.3,
+     "f1": 80.1,
+     "auc": 0.889,
+     "catch@1%fpr": 45.4,
+     "catch@5%fpr": 67.4,
+     "fpr": 25.0,
+     "tpr": 86.7
+    },
+    "openpi": {
+     "n": 499,
+     "acc": 88.4,
+     "f1": 87.1,
+     "auc": 0.968,
+     "catch@1%fpr": 75.2,
+     "catch@5%fpr": 83.2,
+     "fpr": 1.6,
+     "tpr": 78.4
+    },
+    "deepset": {
+     "n": 116,
+     "acc": 73.3,
+     "f1": 65.9,
+     "auc": 0.938,
+     "catch@1%fpr": 41.7,
+     "catch@5%fpr": 81.7,
+     "fpr": 1.8,
+     "tpr": 50.0
+    },
+    "deepset_extra": {
+     "n": 546,
+     "acc": 85.7,
+     "f1": 77.2,
+     "auc": 0.967,
+     "catch@1%fpr": 64.0,
+     "catch@5%fpr": 87.7,
+     "fpr": 2.0,
+     "tpr": 65.0
+    },
+    "notinject": {
+     "n": 339,
+     "acc": 97.1,
+     "fpr": 2.9
+    },
+    "gandalf": {
+     "n": 223,
+     "acc": 95.1,
+     "tpr": 95.1
+    },
+    "adversarial": {
+     "n": 60,
+     "acc": 90.0,
+     "f1": 92.3,
+     "auc": 0.968,
+     "catch@1%fpr": 75.0,
+     "catch@5%fpr": 85.0,
+     "fpr": 10.0,
+     "tpr": 90.0
+    },
+    "macro_train_sources": {
+     "acc": 90.4,
+     "auc": 0.954
+    }
+   }
+  },
+  "v01": {
+   "version": 1,
+   "n_active": 9,
+   "threshold": 0.53,
+   "test": {
+    "safeguard": {
+     "n": 598,
+     "acc": 98.5,
+     "f1": 97.6,
+     "auc": 0.994,
+     "catch@1%fpr": 97.3,
+     "catch@5%fpr": 98.9,
+     "fpr": 0.2,
+     "tpr": 95.7
+    },
+    "jackhhao": {
+     "n": 262,
+     "acc": 95.0,
+     "f1": 95.1,
+     "auc": 0.992,
+     "catch@1%fpr": 95.0,
+     "catch@5%fpr": 95.7,
+     "fpr": 0.8,
+     "tpr": 91.4
+    },
+    "itw": {
+     "n": 478,
+     "acc": 81.6,
+     "f1": 81.1,
+     "auc": 0.892,
+     "catch@1%fpr": 26.6,
+     "catch@5%fpr": 61.0,
+     "fpr": 22.7,
+     "tpr": 86.7
+    },
+    "openpi": {
+     "n": 499,
+     "acc": 94.4,
+     "f1": 94.4,
+     "auc": 0.988,
+     "catch@1%fpr": 77.2,
+     "catch@5%fpr": 94.4,
+     "fpr": 6.4,
+     "tpr": 95.2
+    },
+    "deepset": {
+     "n": 116,
+     "acc": 78.4,
+     "f1": 74.2,
+     "auc": 0.953,
+     "catch@1%fpr": 55.0,
+     "catch@5%fpr": 76.7,
+     "fpr": 1.8,
+     "tpr": 60.0
+    },
+    "deepset_extra": {
+     "n": 546,
+     "acc": 88.8,
+     "f1": 82.4,
+     "auc": 0.978,
+     "catch@1%fpr": 78.3,
+     "catch@5%fpr": 88.7,
+     "fpr": 0.3,
+     "tpr": 70.4
+    },
+    "notinject": {
+     "n": 339,
+     "acc": 98.8,
+     "fpr": 1.2
+    },
+    "gandalf": {
+     "n": 223,
+     "acc": 84.3,
+     "tpr": 84.3
+    },
+    "adversarial": {
+     "n": 60,
+     "acc": 81.7,
+     "f1": 84.5,
+     "auc": 0.96,
+     "catch@1%fpr": 72.5,
+     "catch@5%fpr": 82.5,
+     "fpr": 5.0,
+     "tpr": 75.0
+    },
+    "macro_train_sources": {
+     "acc": 92.4,
+     "auc": 0.966
+    }
+   }
+  },
+  "v02": {
+   "version": 2,
+   "n_active": 8,
+   "threshold": 0.41,
+   "test": {
+    "safeguard": {
+     "n": 598,
+     "acc": 97.8,
+     "f1": 96.5,
+     "auc": 0.992,
+     "catch@1%fpr": 96.3,
+     "catch@5%fpr": 97.9,
+     "fpr": 1.5,
+     "tpr": 96.3
+    },
+    "jackhhao": {
+     "n": 262,
+     "acc": 95.0,
+     "f1": 95.2,
+     "auc": 0.991,
+     "catch@1%fpr": 82.0,
+     "catch@5%fpr": 95.7,
+     "fpr": 2.4,
+     "tpr": 92.8
+    },
+    "itw": {
+     "n": 478,
+     "acc": 79.3,
+     "f1": 79.6,
+     "auc": 0.891,
+     "catch@1%fpr": 34.4,
+     "catch@5%fpr": 54.6,
+     "fpr": 28.5,
+     "tpr": 88.5
+    },
+    "openpi": {
+     "n": 499,
+     "acc": 95.8,
+     "f1": 95.9,
+     "auc": 0.994,
+     "catch@1%fpr": 90.0,
+     "catch@5%fpr": 97.2,
+     "fpr": 6.4,
+     "tpr": 98.0
+    },
+    "deepset": {
+     "n": 116,
+     "acc": 80.2,
+     "f1": 77.7,
+     "auc": 0.954,
+     "catch@1%fpr": 48.3,
+     "catch@5%fpr": 66.7,
+     "fpr": 5.4,
+     "tpr": 66.7
+    },
+    "deepset_extra": {
+     "n": 546,
+     "acc": 89.6,
+     "f1": 83.9,
+     "auc": 0.985,
+     "catch@1%fpr": 76.8,
+     "catch@5%fpr": 91.6,
+     "fpr": 0.6,
+     "tpr": 72.9
+    },
+    "notinject": {
+     "n": 339,
+     "acc": 96.8,
+     "fpr": 3.2
+    },
+    "gandalf": {
+     "n": 223,
+     "acc": 65.9,
+     "tpr": 65.9
+    },
+    "adversarial": {
+     "n": 60,
+     "acc": 78.3,
+     "f1": 82.2,
+     "auc": 0.929,
+     "catch@1%fpr": 70.0,
+     "catch@5%fpr": 70.0,
+     "fpr": 15.0,
+     "tpr": 75.0
+    },
+    "macro_train_sources": {
+     "acc": 92.0,
+     "auc": 0.967
+    }
+   }
+  },
+  "v03": {
+   "version": 3,
+   "n_active": 6,
+   "threshold": 0.54,
+   "test": {
+    "safeguard": {
+     "n": 598,
+     "acc": 96.2,
+     "f1": 93.5,
+     "auc": 0.993,
+     "catch@1%fpr": 96.3,
+     "catch@5%fpr": 97.3,
+     "fpr": 0.2,
+     "tpr": 88.3
+    },
+    "jackhhao": {
+     "n": 262,
+     "acc": 92.0,
+     "f1": 92.0,
+     "auc": 0.979,
+     "catch@1%fpr": 81.3,
+     "catch@5%fpr": 95.7,
+     "fpr": 2.4,
+     "tpr": 87.1
+    },
+    "itw": {
+     "n": 478,
+     "acc": 81.4,
+     "f1": 80.6,
+     "auc": 0.883,
+     "catch@1%fpr": 30.7,
+     "catch@5%fpr": 63.8,
+     "fpr": 21.5,
+     "tpr": 84.9
+    },
+    "openpi": {
+     "n": 499,
+     "acc": 97.2,
+     "f1": 97.2,
+     "auc": 0.997,
+     "catch@1%fpr": 94.4,
+     "catch@5%fpr": 97.6,
+     "fpr": 2.0,
+     "tpr": 96.4
+    },
+    "deepset": {
+     "n": 116,
+     "acc": 78.4,
+     "f1": 74.7,
+     "auc": 0.937,
+     "catch@1%fpr": 48.3,
+     "catch@5%fpr": 80.0,
+     "fpr": 3.6,
+     "tpr": 61.7
+    },
+    "deepset_extra": {
+     "n": 546,
+     "acc": 88.5,
+     "f1": 81.7,
+     "auc": 0.985,
+     "catch@1%fpr": 81.3,
+     "catch@5%fpr": 92.1,
+     "fpr": 0.3,
+     "tpr": 69.5
+    },
+    "notinject": {
+     "n": 339,
+     "acc": 97.6,
+     "fpr": 2.4
+    },
+    "gandalf": {
+     "n": 223,
+     "acc": 74.9,
+     "tpr": 74.9
+    },
+    "adversarial": {
+     "n": 60,
+     "acc": 83.3,
+     "f1": 85.7,
+     "auc": 0.961,
+     "catch@1%fpr": 80.0,
+     "catch@5%fpr": 90.0,
+     "fpr": 0.0,
+     "tpr": 75.0
+    },
+    "macro_train_sources": {
+     "acc": 91.7,
+     "auc": 0.963
+    }
+   }
+  },
+  "v04": {
+   "version": 4,
+   "n_active": 8,
+   "threshold": 0.47,
+   "test": {
+    "safeguard": {
+     "n": 598,
+     "acc": 97.5,
+     "f1": 95.9,
+     "auc": 0.994,
+     "catch@1%fpr": 97.3,
+     "catch@5%fpr": 97.9,
+     "fpr": 0.5,
+     "tpr": 93.1
+    },
+    "jackhhao": {
+     "n": 262,
+     "acc": 93.5,
+     "f1": 93.6,
+     "auc": 0.982,
+     "catch@1%fpr": 87.8,
+     "catch@5%fpr": 96.4,
+     "fpr": 2.4,
+     "tpr": 89.9
+    },
+    "itw": {
+     "n": 478,
+     "acc": 78.2,
+     "f1": 78.3,
+     "auc": 0.881,
+     "catch@1%fpr": 21.6,
+     "catch@5%fpr": 62.8,
+     "fpr": 28.5,
+     "tpr": 86.2
+    },
+    "openpi": {
+     "n": 499,
+     "acc": 97.0,
+     "f1": 97.0,
+     "auc": 0.998,
+     "catch@1%fpr": 95.6,
+     "catch@5%fpr": 98.0,
+     "fpr": 3.6,
+     "tpr": 97.6
+    },
+    "deepset": {
+     "n": 116,
+     "acc": 80.2,
+     "f1": 77.2,
+     "auc": 0.944,
+     "catch@1%fpr": 60.0,
+     "catch@5%fpr": 83.3,
+     "fpr": 3.6,
+     "tpr": 65.0
+    },
+    "deepset_extra": {
+     "n": 546,
+     "acc": 90.5,
+     "f1": 85.4,
+     "auc": 0.986,
+     "catch@1%fpr": 82.8,
+     "catch@5%fpr": 93.1,
+     "fpr": 0.3,
+     "tpr": 74.9
+    },
+    "notinject": {
+     "n": 339,
+     "acc": 97.3,
+     "fpr": 2.7
+    },
+    "gandalf": {
+     "n": 223,
+     "acc": 83.9,
+     "tpr": 83.9
+    },
+    "adversarial": {
+     "n": 60,
+     "acc": 90.0,
+     "f1": 92.1,
+     "auc": 0.965,
+     "catch@1%fpr": 85.0,
+     "catch@5%fpr": 87.5,
+     "fpr": 5.0,
+     "tpr": 87.5
+    },
+    "macro_train_sources": {
+     "acc": 91.6,
+     "auc": 0.964
+    }
+   }
+  },
+  "v05": {
+   "version": 5,
+   "n_active": 6,
+   "threshold": 0.39,
+   "test": {
+    "safeguard": {
+     "n": 598,
+     "acc": 98.0,
+     "f1": 96.8,
+     "auc": 0.994,
+     "catch@1%fpr": 96.3,
+     "catch@5%fpr": 97.9,
+     "fpr": 0.7,
+     "tpr": 95.2
+    },
+    "jackhhao": {
+     "n": 262,
+     "acc": 94.7,
+     "f1": 94.9,
+     "auc": 0.979,
+     "catch@1%fpr": 84.2,
+     "catch@5%fpr": 95.7,
+     "fpr": 3.3,
+     "tpr": 92.8
+    },
+    "itw": {
+     "n": 478,
+     "acc": 79.1,
+     "f1": 79.3,
+     "auc": 0.885,
+     "catch@1%fpr": 28.0,
+     "catch@5%fpr": 64.2,
+     "fpr": 28.5,
+     "tpr": 88.1
+    },
+    "openpi": {
+     "n": 499,
+     "acc": 96.0,
+     "f1": 96.1,
+     "auc": 0.997,
+     "catch@1%fpr": 92.8,
+     "catch@5%fpr": 98.0,
+     "fpr": 7.2,
+     "tpr": 99.2
+    },
+    "deepset": {
+     "n": 116,
+     "acc": 81.9,
+     "f1": 79.6,
+     "auc": 0.935,
+     "catch@1%fpr": 55.0,
+     "catch@5%fpr": 80.0,
+     "fpr": 3.6,
+     "tpr": 68.3
+    },
+    "deepset_extra": {
+     "n": 546,
+     "acc": 91.2,
+     "f1": 86.7,
+     "auc": 0.984,
+     "catch@1%fpr": 81.8,
+     "catch@5%fpr": 92.1,
+     "fpr": 0.6,
+     "tpr": 77.3
+    },
+    "notinject": {
+     "n": 339,
+     "acc": 97.3,
+     "fpr": 2.7
+    },
+    "gandalf": {
+     "n": 223,
+     "acc": 82.1,
+     "tpr": 82.1
+    },
+    "adversarial": {
+     "n": 60,
+     "acc": 90.0,
+     "f1": 92.1,
+     "auc": 0.961,
+     "catch@1%fpr": 75.0,
+     "catch@5%fpr": 90.0,
+     "fpr": 5.0,
+     "tpr": 87.5
+    },
+    "macro_train_sources": {
+     "acc": 91.9,
+     "auc": 0.964
+    }
+   }
+  },
+  "v06": {
+   "version": 6,
+   "n_active": 7,
+   "threshold": 0.51,
+   "test": {
+    "safeguard": {
+     "n": 598,
+     "acc": 96.7,
+     "f1": 94.4,
+     "auc": 0.995,
+     "catch@1%fpr": 97.9,
+     "catch@5%fpr": 98.9,
+     "fpr": 0.2,
+     "tpr": 89.9
+    },
+    "jackhhao": {
+     "n": 262,
+     "acc": 95.4,
+     "f1": 95.6,
+     "auc": 0.994,
+     "catch@1%fpr": 92.8,
+     "catch@5%fpr": 97.8,
+     "fpr": 1.6,
+     "tpr": 92.8
+    },
+    "itw": {
+     "n": 478,
+     "acc": 76.6,
+     "f1": 77.1,
+     "auc": 0.876,
+     "catch@1%fpr": 39.4,
+     "catch@5%fpr": 63.8,
+     "fpr": 31.9,
+     "tpr": 86.7
+    },
+    "openpi": {
+     "n": 499,
+     "acc": 97.8,
+     "f1": 97.8,
+     "auc": 0.999,
+     "catch@1%fpr": 96.8,
+     "catch@5%fpr": 99.2,
+     "fpr": 1.2,
+     "tpr": 96.8
+    },
+    "deepset": {
+     "n": 116,
+     "acc": 81.0,
+     "f1": 78.0,
+     "auc": 0.968,
+     "catch@1%fpr": 61.7,
+     "catch@5%fpr": 83.3,
+     "fpr": 1.8,
+     "tpr": 65.0
+    },
+    "deepset_extra": {
+     "n": 546,
+     "acc": 91.2,
+     "f1": 86.7,
+     "auc": 0.992,
+     "catch@1%fpr": 86.2,
+     "catch@5%fpr": 97.0,
+     "fpr": 0.3,
+     "tpr": 76.8
+    },
+    "notinject": {
+     "n": 339,
+     "acc": 97.6,
+     "fpr": 2.4
+    },
+    "gandalf": {
+     "n": 223,
+     "acc": 89.2,
+     "tpr": 89.2
+    },
+    "adversarial": {
+     "n": 60,
+     "acc": 93.3,
+     "f1": 94.9,
+     "auc": 0.984,
+     "catch@1%fpr": 85.0,
+     "catch@5%fpr": 95.0,
+     "fpr": 5.0,
+     "tpr": 92.5
+    },
+    "macro_train_sources": {
+     "acc": 91.6,
+     "auc": 0.966
+    }
+   }
+  },
+  "final": {
+   "version": 6,
+   "n_active": 7,
+   "threshold": 0.51,
+   "test": {
+    "safeguard": {
+     "n": 598,
+     "acc": 96.7,
+     "f1": 94.4,
+     "auc": 0.995,
+     "catch@1%fpr": 97.9,
+     "catch@5%fpr": 98.9,
+     "fpr": 0.2,
+     "tpr": 89.9
+    },
+    "jackhhao": {
+     "n": 262,
+     "acc": 95.4,
+     "f1": 95.6,
+     "auc": 0.994,
+     "catch@1%fpr": 92.8,
+     "catch@5%fpr": 97.8,
+     "fpr": 1.6,
+     "tpr": 92.8
+    },
+    "itw": {
+     "n": 478,
+     "acc": 76.6,
+     "f1": 77.1,
+     "auc": 0.876,
+     "catch@1%fpr": 39.4,
+     "catch@5%fpr": 63.8,
+     "fpr": 31.9,
+     "tpr": 86.7
+    },
+    "openpi": {
+     "n": 499,
+     "acc": 97.8,
+     "f1": 97.8,
+     "auc": 0.999,
+     "catch@1%fpr": 96.8,
+     "catch@5%fpr": 99.2,
+     "fpr": 1.2,
+     "tpr": 96.8
+    },
+    "deepset": {
+     "n": 116,
+     "acc": 81.0,
+     "f1": 78.0,
+     "auc": 0.968,
+     "catch@1%fpr": 61.7,
+     "catch@5%fpr": 83.3,
+     "fpr": 1.8,
+     "tpr": 65.0
+    },
+    "deepset_extra": {
+     "n": 546,
+     "acc": 91.2,
+     "f1": 86.7,
+     "auc": 0.992,
+     "catch@1%fpr": 86.2,
+     "catch@5%fpr": 97.0,
+     "fpr": 0.3,
+     "tpr": 76.8
+    },
+    "notinject": {
+     "n": 339,
+     "acc": 97.6,
+     "fpr": 2.4
+    },
+    "gandalf": {
+     "n": 223,
+     "acc": 89.2,
+     "tpr": 89.2
+    },
+    "adversarial": {
+     "n": 60,
+     "acc": 93.3,
+     "f1": 94.9,
+     "auc": 0.984,
+     "catch@1%fpr": 85.0,
+     "catch@5%fpr": 95.0,
+     "fpr": 5.0,
+     "tpr": 92.5
+    },
+    "macro_train_sources": {
+     "acc": 91.6,
+     "auc": 0.966
+    }
+   }
+  }
+ },
+ "baselines_missing": [
+  "promptguard2",
+  "claude"
+ ],
+ "leave_one_source_out": {
+  "safeguard": {
+   "english_net": {
+    "n": 598,
+    "acc": 95.0,
+    "f1": 91.3,
+    "auc": 0.994,
+    "catch@1%fpr": 90.4,
+    "catch@5%fpr": 97.9,
+    "fpr": 0.0,
+    "tpr": 84.0
+   },
+   "single_question": {
+    "n": 598,
+    "acc": 92.5,
+    "f1": 86.6,
+    "auc": 0.994,
+    "catch@1%fpr": 95.7,
+    "catch@5%fpr": 98.4,
+    "fpr": 0.5,
+    "tpr": 77.1
+   }
+  },
+  "jackhhao": {
+   "english_net": {
+    "n": 262,
+    "acc": 96.2,
+    "f1": 96.3,
+    "auc": 0.993,
+    "catch@1%fpr": 90.6,
+    "catch@5%fpr": 97.8,
+    "fpr": 1.6,
+    "tpr": 94.2
+   },
+   "single_question": {
+    "n": 262,
+    "acc": 95.4,
+    "f1": 95.8,
+    "auc": 0.995,
+    "catch@1%fpr": 97.8,
+    "catch@5%fpr": 97.8,
+    "fpr": 7.3,
+    "tpr": 97.8
+   }
+  },
+  "itw": {
+   "english_net": {
+    "n": 478,
+    "acc": 72.4,
+    "f1": 74.8,
+    "auc": 0.883,
+    "catch@1%fpr": 46.3,
+    "catch@5%fpr": 65.6,
+    "fpr": 42.3,
+    "tpr": 89.9
+   },
+   "single_question": {
+    "n": 478,
+    "acc": 66.9,
+    "f1": 71.6,
+    "auc": 0.882,
+    "catch@1%fpr": 45.4,
+    "catch@5%fpr": 61.5,
+    "fpr": 53.5,
+    "tpr": 91.3
+   }
+  },
+  "openpi": {
+   "english_net": {
+    "n": 499,
+    "acc": 87.6,
+    "f1": 85.8,
+    "auc": 0.996,
+    "catch@1%fpr": 85.6,
+    "catch@5%fpr": 100.0,
+    "fpr": 0.0,
+    "tpr": 75.2
+   },
+   "single_question": {
+    "n": 499,
+    "acc": 82.0,
+    "f1": 78.0,
+    "auc": 0.997,
+    "catch@1%fpr": 80.0,
+    "catch@5%fpr": 100.0,
+    "fpr": 0.0,
+    "tpr": 64.0
+   }
+  }
+ },
+ "robustness": {
+  "n_attacks": 60,
+  "sources": "gandalf + deepset attacks (English)",
+  "results": {
+   "original": {
+    "english_net_catch": 83.3,
+    "single_question_catch_dev_t": 83.3
+   },
+   "greeting": {
+    "english_net_catch": 83.3,
+    "single_question_catch_dev_t": 85.0
+   },
+   "uppercase": {
+    "english_net_catch": 85.0,
+    "single_question_catch_dev_t": 90.0
+   },
+   "tokenbreak": {
+    "english_net_catch": 83.3,
+    "single_question_catch_dev_t": 85.0
+   },
+   "char_noise": {
+    "english_net_catch": 83.3,
+    "single_question_catch_dev_t": 83.3
+   },
+   "zero_width": {
+    "english_net_catch": 83.3,
+    "single_question_catch_dev_t": 83.3
+   }
+  }
+ },
+ "latency": {
+  "n": 100,
+  "n_questions": 6,
+  "median_ms": 79,
+  "p90_ms": 140,
+  "median_tokens": 472.5,
+  "usd_per_input_median": 1.985e-05,
+  "usd_per_million_inputs": 19.85,
+  "where": "laptop in Providence, RI, sequential calls, TypeSafe API"
+ }
+}

@@ -1,0 +1,8 @@
+{
+ "model": "promptguard2",
+ "status": "blocked",
+ "reason": "gated model, needs HF token + license acceptance",
+ "date": "2026-10-19",
+ "how_to_run": "HF_TOKEN=... python -m englishnet.baselines score --models promptguard2",
+ "error": "You are trying to access a gated repo."
+}

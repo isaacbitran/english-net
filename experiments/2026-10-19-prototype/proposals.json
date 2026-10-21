@@ -1,0 +1,20 @@
+{
+  "add": {
+    "forced_opening_phrase": "Does the text require the response to begin with, start with, or contain an exact quoted phrase chosen by the user?",
+    "quoted_phrase_about_instructions": "Does a quoted phrase in the text refer to instructions, a prompt template, a system, guidelines, or a policy?",
+    "quoted_phrase_claims_compromise": "Does a quoted phrase in the text say that a system was hacked, compromised, breached, vulnerable, or that instructions are false or a hoax?",
+    "story_about_hacking": "Does the text ask for a story, poem, or report whose subject is hacking, a security breach, or a compromised system?",
+    "output_mentions_own_instructions": "Would following the text make the assistant write out text that describes or quotes its own instructions or prompt?",
+    "reversed_or_decoded_payload": "Does the text ask the assistant to reverse, decode, unscramble, or translate a string and then act on the result?",
+    "legal_consequences_threat": "Does the text warn of legal consequences, lawsuits, or punishment unless information is disclosed?",
+    "disclose_classified": "Does the text ask the assistant to disclose classified, confidential, or internal information?",
+    "forced_scenario_stakes": "Does the text set up a scenario in which someone is forced to do a task because their grades, job, or future depends on it?",
+    "professional_role_play": "Does the text ask the assistant to act as a professional such as a designer, interpreter, tutor, or consultant and then give a normal first task for that role?",
+    "output_format_only": "Are the text's rules only about the format of the reply, such as code, markdown, length, or language, with no change to what topics are allowed?",
+    "ordinary_creative_prompt": "Is the text a creative writing request about everyday people, places, or events with no mention of AI, prompts, or systems?",
+    "reasoning_exercise": "Does the text ask for reasoning steps, a chain of thought, or a justification for a given answer?",
+    "financial_prediction_request": "Does the text ask for specific stock picks, price predictions, or other financial forecasts for a given date?",
+    "harmless_dream_or_advice": "Does the text ask for an interpretation, advice, or analysis of a personal experience such as a dream, a relationship, or a habit?"
+  },
+  "drop": ["long_rule_list", "assistant_persona_defined", "named_jailbreak", "requests_confirmation_phrase", "polite_simple_request"]
+}

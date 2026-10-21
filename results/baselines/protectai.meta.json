@@ -1,0 +1,17 @@
+{
+ "model": "protectai",
+ "repo": "protectai/deberta-v3-base-prompt-injection-v2",
+ "revision": "90c9989b1a342275dd0d1a95aad283c04e075671",
+ "device": "mps",
+ "batch_size": 16,
+ "max_tokens": 512,
+ "attack_label": "INJECTION",
+ "latency_ms_median": 21.9,
+ "latency_n": 100,
+ "latency_note": "batch size 1, mps, Apple Silicon (10 cores, 16 GB)",
+ "rows_scored_this_run": 3087,
+ "wall_s_this_run": 56.9,
+ "torch": "2.14.1",
+ "rows_scored_total": 10527,
+ "wall_s_total": 536.5
+}

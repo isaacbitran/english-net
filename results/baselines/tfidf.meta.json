@@ -1,0 +1,20 @@
+{
+ "model": "tfidf",
+ "C": 100,
+ "dev_mean_auc_by_C": {
+  "0.1": 0.961,
+  "0.3": 0.9629,
+  "1": 0.9653,
+  "3": 0.9664,
+  "10": 0.9674,
+  "30": 0.968,
+  "100": 0.9686
+ },
+ "n_train": 2987,
+ "vocab": 48920,
+ "device": "cpu",
+ "latency_ms_median": 0.18,
+ "latency_n": 100,
+ "latency_note": "one text at a time, CPU",
+ "wall_s_this_run": 0.4
+}

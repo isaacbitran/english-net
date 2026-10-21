@@ -1,0 +1,67 @@
+{
+ "round": 8,
+ "kind": "evolution",
+ "at": "2026-10-19",
+ "proposer": "claude-in-session",
+ "added": [],
+ "dropped": [
+  "fake_completion_marker",
+  "do_opposite_of_setup"
+ ],
+ "revised": [],
+ "rejected": [
+  {
+   "id": "ai_action_item",
+   "reason": "paraphrase disagrees (kappa 0.39 < 0.7)"
+  },
+  {
+   "id": "discredits_original_instructions",
+   "reason": "paraphrase disagrees (kappa 0.36 < 0.7)"
+  },
+  {
+   "id": "money_transfer_demand",
+   "reason": "fires on fewer than 5 of 366 gate texts"
+  },
+  {
+   "id": "sponsored_append",
+   "reason": "did not raise the selection score by more than 0.001"
+  },
+  {
+   "id": "always_agrees_persona",
+   "reason": "did not raise the selection score by more than 0.001"
+  },
+  {
+   "id": "mass_marketing_sms",
+   "reason": "did not raise the selection score by more than 0.001"
+  },
+  {
+   "id": "opening_about_security",
+   "reason": "paraphrase disagrees (kappa 0.66 < 0.7)"
+  }
+ ],
+ "metrics": {
+  "J_before": 0.9724,
+  "J": 0.9725,
+  "pooled_dev_auc": {
+   "safeguard": 0.9994,
+   "jackhhao": 0.986,
+   "itw": 0.886,
+   "openpi": 0.9976,
+   "adversarial": 0.9937
+  },
+  "loso_dev_auc": {
+   "safeguard": 0.9989,
+   "jackhhao": 0.9857,
+   "itw": 0.8942,
+   "openpi": 0.9939,
+   "adversarial": 0.9894
+  },
+  "n_active": 6,
+  "C": 0.5,
+  "threshold": 0.39,
+  "n_proposed": 7,
+  "n_revisions_proposed": 0,
+  "n_passed_gate": 3
+ },
+ "summary": "Dropped fake_completion_marker, do_opposite_of_setup. 7 proposals rejected. Selection score 0.9724 -> 0.9725."
+}

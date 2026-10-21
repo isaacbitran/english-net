@@ -1,0 +1,62 @@
+{
+ "seed": 20261019,
+ "max_chars": 6000,
+ "train_sources": [
+  "safeguard",
+  "jackhhao",
+  "itw",
+  "openpi"
+ ],
+ "heldout_sources": [
+  "deepset",
+  "notinject",
+  "gandalf"
+ ],
+ "counts": {
+  "deepset/test/benign": 399,
+  "deepset/test/attack": 263,
+  "gandalf/test/attack": 223,
+  "itw/dev/benign": 146,
+  "itw/dev/attack": 111,
+  "itw/test/benign": 260,
+  "itw/test/attack": 218,
+  "itw/train/benign": 387,
+  "itw/train/attack": 218,
+  "jackhhao/dev/benign": 148,
+  "jackhhao/dev/attack": 116,
+  "jackhhao/test/benign": 123,
+  "jackhhao/test/attack": 139,
+  "jackhhao/train/benign": 367,
+  "jackhhao/train/attack": 228,
+  "notinject/test/benign": 339,
+  "openpi/dev/benign": 191,
+  "openpi/dev/attack": 191,
+  "openpi/test/benign": 249,
+  "openpi/test/attack": 250,
+  "openpi/train/benign": 503,
+  "openpi/train/attack": 509,
+  "safeguard/dev/benign": 208,
+  "safeguard/dev/attack": 86,
+  "safeguard/test/benign": 410,
+  "safeguard/test/attack": 188,
+  "safeguard/train/benign": 551,
+  "safeguard/train/attack": 224
+ },
+ "dropped_duplicates": {
+  "itw/dev": 43,
+  "itw/test": 22,
+  "itw/train": 195,
+  "jackhhao/dev": 36,
+  "jackhhao/train": 149,
+  "openpi/test": 1,
+  "openpi/train": 6,
+  "safeguard/dev": 6,
+  "safeguard/test": 2,
+  "safeguard/train": 25
+ },
+ "sha1_of_ids_by_split": {
+  "train": "228529fee9ad273c635cbed578c3ae30f2c82063",
+  "dev": "d235f999c7d02cb8c64e1e44a88c9051c26e0ec2",
+  "test": "ca006f1cf15a35694cebaad7fcaeb2c640bbccac"
+ }
+}

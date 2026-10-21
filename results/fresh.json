@@ -1,0 +1,438 @@
+{
+ "n_fresh_test": 2193,
+ "thresholds": {
+  "v6": 0.51,
+  "single": 0.21,
+  "v5": 0.39,
+  "v6+patch": 0.51,
+  "piguard": 0.5,
+  "protectai": 0.5,
+  "deepset": 0.5,
+  "tfidf": 0.5
+ },
+ "by_source": {
+  "v6": {
+   "mosscap": {
+    "n": 206,
+    "acc": 40.8,
+    "tpr": 40.8
+   },
+   "multiling_attack": {
+    "n": 713,
+    "acc": 77.7,
+    "tpr": 77.7
+   },
+   "aya_benign": {
+    "n": 576,
+    "acc": 100.0,
+    "fpr": 0.0
+   },
+   "spml": {
+    "n": 416,
+    "acc": 71.4,
+    "f1": 58.5,
+    "auc": 0.999,
+    "catch@1%fpr": 97.0,
+    "catch@5%fpr": 99.5,
+    "fpr": 0.0,
+    "tpr": 41.4
+   },
+   "jayavibhav": {
+    "n": 282,
+    "acc": 90.8,
+    "f1": 90.0,
+    "auc": 0.97,
+    "catch@1%fpr": 66.4,
+    "catch@5%fpr": 86.4,
+    "fpr": 2.1,
+    "tpr": 83.6
+   },
+   "all_benign_false_alarms": 0.3,
+   "all_attacks_caught": 66.5
+  },
+  "single": {
+   "mosscap": {
+    "n": 206,
+    "acc": 40.8,
+    "tpr": 40.8
+   },
+   "multiling_attack": {
+    "n": 713,
+    "acc": 87.5,
+    "tpr": 87.5
+   },
+   "aya_benign": {
+    "n": 576,
+    "acc": 100.0,
+    "fpr": 0.0
+   },
+   "spml": {
+    "n": 416,
+    "acc": 78.1,
+    "f1": 71.1,
+    "auc": 0.996,
+    "catch@1%fpr": 94.1,
+    "catch@5%fpr": 96.6,
+    "fpr": 0.0,
+    "tpr": 55.2
+   },
+   "jayavibhav": {
+    "n": 282,
+    "acc": 87.9,
+    "f1": 86.8,
+    "auc": 0.956,
+    "catch@1%fpr": 63.6,
+    "catch@5%fpr": 82.1,
+    "fpr": 4.2,
+    "tpr": 80.0
+   },
+   "all_benign_false_alarms": 0.6,
+   "all_attacks_caught": 73.9
+  },
+  "v5": {
+   "mosscap": {
+    "n": 206,
+    "acc": 46.1,
+    "tpr": 46.1
+   },
+   "multiling_attack": {
+    "n": 713,
+    "acc": 79.4,
+    "tpr": 79.4
+   },
+   "aya_benign": {
+    "n": 576,
+    "acc": 99.8,
+    "fpr": 0.2
+   },
+   "spml": {
+    "n": 416,
+    "acc": 72.8,
+    "f1": 61.4,
+    "auc": 0.996,
+    "catch@1%fpr": 90.6,
+    "catch@5%fpr": 98.5,
+    "fpr": 0.0,
+    "tpr": 44.3
+   },
+   "jayavibhav": {
+    "n": 282,
+    "acc": 91.1,
+    "f1": 91.1,
+    "auc": 0.968,
+    "catch@1%fpr": 67.1,
+    "catch@5%fpr": 87.1,
+    "fpr": 9.2,
+    "tpr": 91.4
+   },
+   "all_benign_false_alarms": 1.5,
+   "all_attacks_caught": 69.7
+  },
+  "v6+patch": {
+   "mosscap": {
+    "n": 206,
+    "acc": 70.4,
+    "tpr": 70.4
+   },
+   "multiling_attack": {
+    "n": 713,
+    "acc": 87.0,
+    "tpr": 87.0
+   },
+   "aya_benign": {
+    "n": 576,
+    "acc": 100.0,
+    "fpr": 0.0
+   },
+   "spml": {
+    "n": 416,
+    "acc": 72.1,
+    "f1": 60.0,
+    "auc": 0.999,
+    "catch@1%fpr": 97.0,
+    "catch@5%fpr": 99.5,
+    "fpr": 0.0,
+    "tpr": 42.9
+   },
+   "jayavibhav": {
+    "n": 282,
+    "acc": 91.8,
+    "f1": 91.3,
+    "auc": 0.971,
+    "catch@1%fpr": 67.9,
+    "catch@5%fpr": 87.1,
+    "fpr": 2.8,
+    "tpr": 86.4
+   },
+   "all_benign_false_alarms": 0.4,
+   "all_attacks_caught": 77.1
+  },
+  "piguard": {
+   "mosscap": {
+    "n": 206,
+    "acc": 22.3,
+    "tpr": 22.3
+   },
+   "multiling_attack": {
+    "n": 713,
+    "acc": 72.4,
+    "tpr": 72.4
+   },
+   "aya_benign": {
+    "n": 576,
+    "acc": 95.0,
+    "fpr": 5.0
+   },
+   "spml": {
+    "n": 416,
+    "acc": 58.7,
+    "f1": 26.5,
+    "auc": 0.981,
+    "catch@1%fpr": 79.8,
+    "catch@5%fpr": 89.7,
+    "fpr": 0.0,
+    "tpr": 15.3
+   },
+   "jayavibhav": {
+    "n": 282,
+    "acc": 71.6,
+    "f1": 70.6,
+    "auc": 0.834,
+    "catch@1%fpr": 34.3,
+    "catch@5%fpr": 54.3,
+    "fpr": 25.4,
+    "tpr": 68.6
+   },
+   "all_benign_false_alarms": 7.0,
+   "all_attacks_caught": 54.6
+  },
+  "protectai": {
+   "mosscap": {
+    "n": 206,
+    "acc": 56.3,
+    "tpr": 56.3
+   },
+   "multiling_attack": {
+    "n": 713,
+    "acc": 97.9,
+    "tpr": 97.9
+   },
+   "aya_benign": {
+    "n": 576,
+    "acc": 92.0,
+    "fpr": 8.0
+   },
+   "spml": {
+    "n": 416,
+    "acc": 94.2,
+    "f1": 94.4,
+    "auc": 0.997,
+    "catch@1%fpr": 98.0,
+    "catch@5%fpr": 98.5,
+    "fpr": 10.3,
+    "tpr": 99.0
+   },
+   "jayavibhav": {
+    "n": 282,
+    "acc": 59.9,
+    "f1": 71.1,
+    "auc": 0.886,
+    "catch@1%fpr": 0.0,
+    "catch@5%fpr": 64.3,
+    "fpr": 78.9,
+    "tpr": 99.3
+   },
+   "all_benign_false_alarms": 19.3,
+   "all_attacks_caught": 91.4
+  },
+  "deepset": {
+   "mosscap": {
+    "n": 206,
+    "acc": 67.5,
+    "tpr": 67.5
+   },
+   "multiling_attack": {
+    "n": 713,
+    "acc": 81.2,
+    "tpr": 81.2
+   },
+   "aya_benign": {
+    "n": 576,
+    "acc": 51.6,
+    "fpr": 48.4
+   },
+   "spml": {
+    "n": 416,
+    "acc": 93.5,
+    "f1": 92.9,
+    "auc": 0.996,
+    "catch@1%fpr": 93.1,
+    "catch@5%fpr": 97.5,
+    "fpr": 0.0,
+    "tpr": 86.7
+   },
+   "jayavibhav": {
+    "n": 282,
+    "acc": 50.0,
+    "f1": 66.5,
+    "auc": 0.748,
+    "catch@1%fpr": 3.6,
+    "catch@5%fpr": 18.6,
+    "fpr": 99.3,
+    "tpr": 100.0
+   },
+   "all_benign_false_alarms": 45.1,
+   "all_attacks_caught": 81.9
+  },
+  "tfidf": {
+   "mosscap": {
+    "n": 206,
+    "acc": 10.2,
+    "tpr": 10.2
+   },
+   "multiling_attack": {
+    "n": 713,
+    "acc": 3.1,
+    "tpr": 3.1
+   },
+   "aya_benign": {
+    "n": 576,
+    "acc": 99.7,
+    "fpr": 0.3
+   },
+   "spml": {
+    "n": 416,
+    "acc": 70.7,
+    "f1": 57.6,
+    "auc": 0.949,
+    "catch@1%fpr": 43.3,
+    "catch@5%fpr": 75.9,
+    "fpr": 0.9,
+    "tpr": 40.9
+   },
+   "jayavibhav": {
+    "n": 282,
+    "acc": 54.3,
+    "f1": 18.9,
+    "auc": 0.719,
+    "catch@1%fpr": 10.0,
+    "catch@5%fpr": 15.0,
+    "fpr": 2.8,
+    "tpr": 10.7
+   },
+   "all_benign_false_alarms": 0.9,
+   "all_attacks_caught": 11.2
+  }
+ },
+ "pooled_auc": {
+  "v6": 0.9791,
+  "single": 0.9827,
+  "v5": 0.9685,
+  "v6+patch": 0.9832,
+  "piguard": 0.8633,
+  "protectai": 0.9463,
+  "deepset": 0.7335,
+  "tfidf": 0.7457
+ },
+ "ci": {
+  "fresh_test: v6 - single": {
+   "auc_a": 0.9791,
+   "auc_b": 0.9827,
+   "diff": -0.0037,
+   "ci95": [
+    -0.0062,
+    -0.0012
+   ],
+   "n": 2193,
+   "n_attack": 1262
+  },
+  "fresh_test: v6 - v5": {
+   "auc_a": 0.9791,
+   "auc_b": 0.9685,
+   "diff": 0.0106,
+   "ci95": [
+    0.0082,
+    0.013
+   ],
+   "n": 2193,
+   "n_attack": 1262
+  },
+  "old never-trained sources: v6 - single": {
+   "auc_a": 0.9811,
+   "auc_b": 0.9831,
+   "diff": -0.002,
+   "ci95": [
+    -0.0048,
+    0.0007
+   ],
+   "n": 1284,
+   "n_attack": 526
+  },
+  "old never-trained sources: v5 - single": {
+   "auc_a": 0.9687,
+   "auc_b": 0.9831,
+   "diff": -0.0144,
+   "ci95": [
+    -0.0204,
+    -0.0087
+   ],
+   "n": 1284,
+   "n_attack": 526
+  },
+  "old training-source tests: v6 - single": {
+   "auc_a": 0.9707,
+   "auc_b": 0.9465,
+   "diff": 0.0242,
+   "ci95": [
+    0.0182,
+    0.0301
+   ],
+   "n": 1837,
+   "n_attack": 795
+  },
+  "fresh_test: v6+patch - v6": {
+   "auc_a": 0.9832,
+   "auc_b": 0.9791,
+   "diff": 0.0041,
+   "ci95": [
+    0.0027,
+    0.0057
+   ],
+   "n": 2193,
+   "n_attack": 1262
+  },
+  "fresh_test: v6+patch - single": {
+   "auc_a": 0.9832,
+   "auc_b": 0.9827,
+   "diff": 0.0004,
+   "ci95": [
+    -0.0022,
+    0.0031
+   ],
+   "n": 2193,
+   "n_attack": 1262
+  },
+  "fresh_test: v6 - piguard": {
+   "auc_a": 0.9791,
+   "auc_b": 0.8633,
+   "diff": 0.1157,
+   "ci95": [
+    0.1029,
+    0.1295
+   ],
+   "n": 2193,
+   "n_attack": 1262
+  },
+  "fresh_test: v6 - protectai": {
+   "auc_a": 0.9791,
+   "auc_b": 0.9463,
+   "diff": 0.0327,
+   "ci95": [
+    0.0245,
+    0.0411
+   ],
+   "n": 2193,
+   "n_attack": 1262
+  }
+ }
+}

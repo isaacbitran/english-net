@@ -1,0 +1,9 @@
+# Extra dependencies for englishnet/baselines.py only (core requirements stay separate).
+# Install: uv pip install --python .venv/bin/python -r requirements-baselines.txt
+torch==2.14.1
+transformers==5.20.2
+sentencepiece
+protobuf
+accelerate
+scikit-learn
+anthropic>=1.15

@@ -1,0 +1,52 @@
+{
+ "source": "https://raw.githubusercontent.com/leolee99/PIGuard/main/datasets/train.json",
+ "piguard_train_texts": 73473,
+ "date": "2026-10-19",
+ "by_source": {
+  "safeguard": {
+   "n": 598,
+   "overlap": 80,
+   "share": 13.4
+  },
+  "jackhhao": {
+   "n": 262,
+   "overlap": 19,
+   "share": 7.3
+  },
+  "itw": {
+   "n": 478,
+   "overlap": 87,
+   "share": 18.2
+  },
+  "openpi": {
+   "n": 499,
+   "overlap": 0,
+   "share": 0.0
+  },
+  "deepset": {
+   "n": 116,
+   "overlap": 2,
+   "share": 1.7
+  },
+  "deepset-train546": {
+   "n": 546,
+   "overlap": 546,
+   "share": 100.0
+  },
+  "notinject": {
+   "n": 339,
+   "overlap": 0,
+   "share": 0.0
+  },
+  "gandalf": {
+   "n": 223,
+   "overlap": 0,
+   "share": 0.0
+  },
+  "train+dev (all training sources)": {
+   "n": 4184,
+   "overlap": 1969,
+   "share": 47.1
+  }
+ }
+}
