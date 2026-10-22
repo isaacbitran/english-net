@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: software
+title: "English Net: a prompt-injection detector whose neurons are English questions"
+abstract: "A prompt-injection detector whose neurons are English yes/no questions answered by Jev; one added sentence raised the catch rate on a missed attack family from 40.8% to 70.4% with no retraining."
+authors:
+  - family-names: Bitran
+    given-names: Isaac
+    affiliation: Brown University
+repository-code: "https://github.com/isaacbitran/english-net"
+url: "https://english-net-chi.vercel.app"
+license: MIT
+version: "1.0"
+date-released: "2026-10-21"
+keywords:
+  - prompt injection
+  - AI security
+  - interpretable classifiers
+  - judgment models
