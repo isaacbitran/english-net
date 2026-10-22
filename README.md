@@ -6,7 +6,7 @@ retraining, raised the catch rate on a missed attack family from 40.8% to 70.4%,
 
 ![Scoring a password probe: it passes as benign, one English question is added as a neuron, and the same prompts flip to attack](docs/demo.gif)
 
-Live demo: https://english-net-chi.vercel.app
+**Live demo:** https://english-net-chi.vercel.app · **One-page note:** [PDF](https://github.com/isaacbitran/english-net/releases/download/v1.0/english-net-note.pdf)
 
 ## Results
 
